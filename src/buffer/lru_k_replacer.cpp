@@ -1,106 +1,172 @@
-//===----------------------------------------------------------------------===//
-//
-//                         BusTub
-//
-// lru_k_replacer.cpp
-//
-// Identification: src/buffer/lru_k_replacer.cpp
-//
-// Copyright (c) 2015-2025, Carnegie Mellon University Database Group
-//
-//===----------------------------------------------------------------------===//
-
 #include "buffer/lru_k_replacer.h"
-#include "common/exception.h"
+#include <algorithm>
+#include <iostream>
+#include <limits>
+#include <chrono>
 
 namespace bustub {
 
-/**
- *
- * TODO(P1): Add implementation
- *
- * @brief a new LRUKReplacer.
- * @param num_frames the maximum number of frames the LRUReplacer will be required to store
- */
-LRUKReplacer::LRUKReplacer(size_t num_frames, size_t k) : replacer_size_(num_frames), k_(k) {}
+LRUKReplacer::LRUKReplacer(size_t num_frames, size_t k) 
+    : current_size_(0), replacer_size_(num_frames), k_(k) {}
 
-/**
- * TODO(P1): Add implementation
- *
- * @brief Find the frame with largest backward k-distance and evict that frame. Only frames
- * that are marked as 'evictable' are candidates for eviction.
- *
- * A frame with less than k historical references is given +inf as its backward k-distance.
- * If multiple frames have inf backward k-distance, then evict frame whose oldest timestamp
- * is furthest in the past.
- *
- * Successful eviction of a frame should decrement the size of replacer and remove the frame's
- * access history.
- *
- * @return the frame ID if a frame is successfully evicted, or `std::nullopt` if no frames can be evicted.
- */
-auto LRUKReplacer::Evict() -> std::optional<frame_id_t> { return std::nullopt; }
+auto LRUKReplacer::Evict() -> std::optional<frame_id_t> {
+  std::scoped_lock lock(latch_);
+  
+  // First, try to evict from cache list (frames with k or more accesses)
+  if (!cache_list_.empty()) {
+    // Find the frame with the earliest k-th access (back of the list is LRU)
+    for (auto it = cache_list_.rbegin(); it != cache_list_.rend(); ++it) {
+      frame_id_t frame_id = *it;
+      if (frame_table_[frame_id].evictable) {
+        // Found an evictable frame in cache list
+        RemoveFrame(frame_id);
+        return frame_id;
+      }
+    }
+  }
+  
+  // If no evictable frame in cache list, try history list (frames with less than k accesses)
+  if (!history_list_.empty()) {
+    // Find the frame with the earliest first access
+    frame_id_t candidate = -1;
+    time_t earliest_time = std::numeric_limits<time_t>::max();
+    
+    for (auto frame : history_list_) {
+      auto &frame_info = frame_table_[frame];
+      if (frame_info.evictable && frame_info.earliest_time < earliest_time) {
+        candidate = frame;
+        earliest_time = frame_info.earliest_time;
+      }
+    }
+    
+    if (candidate != -1) {
+      RemoveFrame(candidate);
+      return candidate;
+    }
+  }
+  
+  return std::nullopt;
+}
 
-/**
- * TODO(P1): Add implementation
- *
- * @brief Record the event that the given frame id is accessed at current timestamp.
- * Create a new entry for access history if frame id has not been seen before.
- *
- * If frame id is invalid (ie. larger than replacer_size_), throw an exception. You can
- * also use BUSTUB_ASSERT to abort the process if frame id is invalid.
- *
- * @param frame_id id of frame that received a new access.
- * @param access_type type of access that was received. This parameter is only needed for
- * leaderboard tests.
- */
-void LRUKReplacer::RecordAccess(frame_id_t frame_id, [[maybe_unused]] AccessType access_type) {}
+void LRUKReplacer::RecordAccess(frame_id_t frame_id) {
+  std::scoped_lock lock(latch_);
+  
+  if (static_cast<size_t>(frame_id) >= replacer_size_) {
+    return;
+  }
+  
+  auto &frame_info = frame_table_[frame_id];
+  time_t current_time = GetCurrentTime();
+  
+  // Record this access
+  frame_info.history.push_back(current_time);
+  
+  // If this is the first access, set earliest time
+  if (frame_info.history.size() == 1) {
+    frame_info.earliest_time = current_time;
+  }
+  
+  // Maintain only k most recent accesses
+  if (frame_info.history.size() > k_) {
+    frame_info.history.pop_front();
+  }
+  
+  // Update lists based on access count
+  if (frame_info.history.size() < k_) {
+    // Still in history list (less than k accesses)
+    if (history_map_.find(frame_id) == history_map_.end()) {
+      // Add to history list if not already there
+      history_list_.push_front(frame_id);
+      history_map_[frame_id] = history_list_.begin();
+    } else {
+      // Move to front of history list (most recent)
+      history_list_.erase(history_map_[frame_id]);
+      history_list_.push_front(frame_id);
+      history_map_[frame_id] = history_list_.begin();
+    }
+    
+    // Remove from cache list if it was there
+    if (cache_map_.find(frame_id) != cache_map_.end()) {
+      cache_list_.erase(cache_map_[frame_id]);
+      cache_map_.erase(frame_id);
+    }
+  } else {
+    // Moved to cache list (k or more accesses)
+    if (cache_map_.find(frame_id) == cache_map_.end()) {
+      // Add to cache list if not already there
+      cache_list_.push_front(frame_id);
+      cache_map_[frame_id] = cache_list_.begin();
+    } else {
+      // Move to front of cache list (most recent)
+      cache_list_.erase(cache_map_[frame_id]);
+      cache_list_.push_front(frame_id);
+      cache_map_[frame_id] = cache_list_.begin();
+    }
+    
+    // Remove from history list if it was there
+    if (history_map_.find(frame_id) != history_map_.end()) {
+      history_list_.erase(history_map_[frame_id]);
+      history_map_.erase(frame_id);
+    }
+  }
+}
 
-/**
- * TODO(P1): Add implementation
- *
- * @brief Toggle whether a frame is evictable or non-evictable. This function also
- * controls replacer's size. Note that size is equal to number of evictable entries.
- *
- * If a frame was previously evictable and is to be set to non-evictable, then size should
- * decrement. If a frame was previously non-evictable and is to be set to evictable,
- * then size should increment.
- *
- * If frame id is invalid, throw an exception or abort the process.
- *
- * For other scenarios, this function should terminate without modifying anything.
- *
- * @param frame_id id of frame whose 'evictable' status will be modified
- * @param set_evictable whether the given frame is evictable or not
- */
-void LRUKReplacer::SetEvictable(frame_id_t frame_id, bool set_evictable) {}
+void LRUKReplacer::SetEvictable(frame_id_t frame_id, bool set_evictable) {
+  std::scoped_lock lock(latch_);
+  
+  if (frame_table_.find(frame_id) == frame_table_.end()) {
+    return;
+  }
+  
+  auto &frame_info = frame_table_[frame_id];
+  
+  if (frame_info.evictable && !set_evictable) {
+    current_size_--;
+  } else if (!frame_info.evictable && set_evictable) {
+    current_size_++;
+  }
+  
+  frame_info.evictable = set_evictable;
+}
 
-/**
- * TODO(P1): Add implementation
- *
- * @brief Remove an evictable frame from replacer, along with its access history.
- * This function should also decrement replacer's size if removal is successful.
- *
- * Note that this is different from evicting a frame, which always remove the frame
- * with largest backward k-distance. This function removes specified frame id,
- * no matter what its backward k-distance is.
- *
- * If Remove is called on a non-evictable frame, throw an exception or abort the
- * process.
- *
- * If specified frame is not found, directly return from this function.
- *
- * @param frame_id id of frame to be removed
- */
-void LRUKReplacer::Remove(frame_id_t frame_id) {}
+void LRUKReplacer::Remove(frame_id_t frame_id) {
+  std::scoped_lock lock(latch_);
+  
+  if (frame_table_.find(frame_id) == frame_table_.end()) {
+    return;
+  }
+  
+  if (!frame_table_[frame_id].evictable) {
+    return;
+  }
+  
+  RemoveFrame(frame_id);
+}
 
-/**
- * TODO(P1): Add implementation
- *
- * @brief Return replacer's size, which tracks the number of evictable frames.
- *
- * @return size_t
- */
-auto LRUKReplacer::Size() -> size_t { return 0; }
+auto LRUKReplacer::Size() -> size_t {
+  std::scoped_lock lock(latch_);
+  return current_size_;
+}
+
+void LRUKReplacer::RemoveFrame(frame_id_t frame_id) {
+  if (history_map_.find(frame_id) != history_map_.end()) {
+    history_list_.erase(history_map_[frame_id]);
+    history_map_.erase(frame_id);
+  }
+  if (cache_map_.find(frame_id) != cache_map_.end()) {
+    cache_list_.erase(cache_map_[frame_id]);
+    cache_map_.erase(frame_id);
+  }
+  
+  if (frame_table_[frame_id].evictable) {
+    current_size_--;
+  }
+  frame_table_.erase(frame_id);
+}
+
+auto LRUKReplacer::GetCurrentTime() -> time_t {
+  return std::chrono::system_clock::to_time_t(
+      std::chrono::system_clock::now());
+}
 
 }  // namespace bustub
