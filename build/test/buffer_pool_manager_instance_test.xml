@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="0" disabled="0" errors="0" time="1.609" timestamp="2025-11-30T05:14:07.151" name="AllTests">
+  <testsuite name="BufferPoolManagerInstanceTest" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="1.609" timestamp="2025-11-30T05:14:07.151">
+    <testcase name="HardTest_4" file="/Users/cscs/Downloads/bustub_initial/test/buffer/buffer_pool_manager_instance_test.cpp" line="824" status="run" result="completed" time="1.609" timestamp="2025-11-30T05:14:07.151" classname="BufferPoolManagerInstanceTest" />
+  </testsuite>
+</testsuites>

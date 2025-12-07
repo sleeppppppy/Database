@@ -1,0 +1,5 @@
+if(EXISTS "/Users/cscs/Downloads/bustub_initial/build/test/hash_table_page_test[1]_tests.cmake")
+  include("/Users/cscs/Downloads/bustub_initial/build/test/hash_table_page_test[1]_tests.cmake")
+else()
+  add_test(hash_table_page_test_NOT_BUILT hash_table_page_test_NOT_BUILT)
+endif()

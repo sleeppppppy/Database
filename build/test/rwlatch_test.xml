@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="0" disabled="0" errors="0" time="0.003" timestamp="2025-11-30T05:14:09.121" name="AllTests">
+  <testsuite name="RWLatchTest" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="0.003" timestamp="2025-11-30T05:14:09.121">
+    <testcase name="BasicTest" file="/Users/cscs/Downloads/bustub_initial/test/common/rwlatch_test.cpp" line="43" status="run" result="completed" time="0.003" timestamp="2025-11-30T05:14:09.121" classname="RWLatchTest" />
+  </testsuite>
+</testsuites>

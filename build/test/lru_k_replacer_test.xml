@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="0" disabled="0" errors="0" time="0.051" timestamp="2025-11-30T05:14:09.001" name="AllTests">
+  <testsuite name="LRUKReplacerTest" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="0.051" timestamp="2025-11-30T05:14:09.001">
+    <testcase name="ConcurrencyTest" file="/Users/cscs/Downloads/bustub_initial/test/buffer/lru_k_replacer_test.cpp" line="454" status="run" result="completed" time="0.051" timestamp="2025-11-30T05:14:09.001" classname="LRUKReplacerTest" />
+  </testsuite>
+</testsuites>

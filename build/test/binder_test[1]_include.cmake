@@ -1,0 +1,5 @@
+if(EXISTS "/Users/cscs/Downloads/bustub_initial/build/test/binder_test[1]_tests.cmake")
+  include("/Users/cscs/Downloads/bustub_initial/build/test/binder_test[1]_tests.cmake")
+else()
+  add_test(binder_test_NOT_BUILT binder_test_NOT_BUILT)
+endif()

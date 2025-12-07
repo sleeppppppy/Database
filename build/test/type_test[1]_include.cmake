@@ -1,0 +1,5 @@
+if(EXISTS "/Users/cscs/Downloads/bustub_initial/build/test/type_test[1]_tests.cmake")
+  include("/Users/cscs/Downloads/bustub_initial/build/test/type_test[1]_tests.cmake")
+else()
+  add_test(type_test_NOT_BUILT type_test_NOT_BUILT)
+endif()

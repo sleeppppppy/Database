@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="0" disabled="0" errors="0" time="0.01" timestamp="2025-11-30T05:14:11.372" name="AllTests">
+  <testsuite name="ExtendibleHashTableTest" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="0.01" timestamp="2025-11-30T05:14:11.372">
+    <testcase name="IntegratedTest" file="/Users/cscs/Downloads/bustub_initial/test/container/hash/extendible_hash_table_test.cpp" line="696" status="run" result="completed" time="0.01" timestamp="2025-11-30T05:14:11.372" classname="ExtendibleHashTableTest" />
+  </testsuite>
+</testsuites>

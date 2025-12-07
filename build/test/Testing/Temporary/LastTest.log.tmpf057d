@@ -1,0 +1,3550 @@
+Start testing: Nov 30 05:14 CST
+----------------------------------------------------------
+1/150 Testing: BinderTest.BindSelectValue
+1/150 Test: BinderTest.BindSelectValue
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/binder_test" "--gtest_filter=BinderTest.BindSelectValue" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/binder_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"BinderTest.BindSelectValue" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = BinderTest.BindSelectValue
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BinderTest
+[ RUN      ] BinderTest.BindSelectValue
+BoundSelect {
+  table=<empty>,
+  columns=[1],
+  groupBy=[],
+  having=,
+  where=,
+  limit=,
+  offset=,
+  order_by=[],
+  is_distinct=false,
+  ctes=,
+}
+[       OK ] BinderTest.BindSelectValue (0 ms)
+[----------] 1 test from BinderTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"BinderTest.BindSelectValue" end time: Nov 30 05:14 CST
+"BinderTest.BindSelectValue" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/150 Testing: BinderTest.BindSelectFrom
+2/150 Test: BinderTest.BindSelectFrom
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/binder_test" "--gtest_filter=BinderTest.BindSelectFrom" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/binder_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"BinderTest.BindSelectFrom" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = BinderTest.BindSelectFrom
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BinderTest
+[ RUN      ] BinderTest.BindSelectFrom
+BoundSelect {
+  table=BoundBaseTableRef { table=y, oid=0 },
+  columns=[y.x],
+  groupBy=[],
+  having=,
+  where=,
+  limit=,
+  offset=,
+  order_by=[],
+  is_distinct=false,
+  ctes=,
+}
+[       OK ] BinderTest.BindSelectFrom (0 ms)
+[----------] 1 test from BinderTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"BinderTest.BindSelectFrom" end time: Nov 30 05:14 CST
+"BinderTest.BindSelectFrom" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/150 Testing: BinderTest.BindSelectFromWhere
+3/150 Test: BinderTest.BindSelectFromWhere
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/binder_test" "--gtest_filter=BinderTest.BindSelectFromWhere" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/binder_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"BinderTest.BindSelectFromWhere" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = BinderTest.BindSelectFromWhere
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BinderTest
+[ RUN      ] BinderTest.BindSelectFromWhere
+BoundSelect {
+  table=BoundBaseTableRef { table=y, oid=0 },
+  columns=[y.x],
+  groupBy=[],
+  having=,
+  where=(y.z=1),
+  limit=,
+  offset=,
+  order_by=[],
+  is_distinct=false,
+  ctes=,
+}
+[       OK ] BinderTest.BindSelectFromWhere (0 ms)
+[----------] 1 test from BinderTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"BinderTest.BindSelectFromWhere" end time: Nov 30 05:14 CST
+"BinderTest.BindSelectFromWhere" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/150 Testing: BinderTest.BindSelectFromStar
+4/150 Test: BinderTest.BindSelectFromStar
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/binder_test" "--gtest_filter=BinderTest.BindSelectFromStar" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/binder_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"BinderTest.BindSelectFromStar" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = BinderTest.BindSelectFromStar
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BinderTest
+[ RUN      ] BinderTest.BindSelectFromStar
+BoundSelect {
+  table=BoundBaseTableRef { table=y, oid=0 },
+  columns=[y.x, y.z, y.a, y.b, y.c],
+  groupBy=[],
+  having=,
+  where=,
+  limit=,
+  offset=,
+  order_by=[],
+  is_distinct=false,
+  ctes=,
+}
+[       OK ] BinderTest.BindSelectFromStar (0 ms)
+[----------] 1 test from BinderTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"BinderTest.BindSelectFromStar" end time: Nov 30 05:14 CST
+"BinderTest.BindSelectFromStar" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/150 Testing: BinderTest.BindSelectFromMultipleCol
+5/150 Test: BinderTest.BindSelectFromMultipleCol
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/binder_test" "--gtest_filter=BinderTest.BindSelectFromMultipleCol" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/binder_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"BinderTest.BindSelectFromMultipleCol" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = BinderTest.BindSelectFromMultipleCol
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BinderTest
+[ RUN      ] BinderTest.BindSelectFromMultipleCol
+BoundSelect {
+  table=BoundBaseTableRef { table=y, oid=0 },
+  columns=[y.a, y.b, y.c],
+  groupBy=[],
+  having=,
+  where=,
+  limit=,
+  offset=,
+  order_by=[],
+  is_distinct=false,
+  ctes=,
+}
+[       OK ] BinderTest.BindSelectFromMultipleCol (0 ms)
+[----------] 1 test from BinderTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"BinderTest.BindSelectFromMultipleCol" end time: Nov 30 05:14 CST
+"BinderTest.BindSelectFromMultipleCol" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/150 Testing: BinderTest.BindSelectExpr
+6/150 Test: BinderTest.BindSelectExpr
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/binder_test" "--gtest_filter=BinderTest.BindSelectExpr" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/binder_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"BinderTest.BindSelectExpr" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = BinderTest.BindSelectExpr
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BinderTest
+[ RUN      ] BinderTest.BindSelectExpr
+BoundSelect {
+  table=BoundBaseTableRef { table=y, oid=0 },
+  columns=[max([y.a]), min([y.b]), first([y.c])],
+  groupBy=[],
+  having=,
+  where=,
+  limit=,
+  offset=,
+  order_by=[],
+  is_distinct=false,
+  ctes=,
+}
+[       OK ] BinderTest.BindSelectExpr (0 ms)
+[----------] 1 test from BinderTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"BinderTest.BindSelectExpr" end time: Nov 30 05:14 CST
+"BinderTest.BindSelectExpr" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/150 Testing: BinderTest.BindAgg
+7/150 Test: BinderTest.BindAgg
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/binder_test" "--gtest_filter=BinderTest.BindAgg" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/binder_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"BinderTest.BindAgg" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = BinderTest.BindAgg
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BinderTest
+[ RUN      ] BinderTest.BindAgg
+BoundSelect {
+  table=BoundBaseTableRef { table=y, oid=0 },
+  columns=[y.z, max([y.a]), min([y.b]), first([y.c])],
+  groupBy=[y.z],
+  having=(max([y.a])>0),
+  where=,
+  limit=,
+  offset=,
+  order_by=[],
+  is_distinct=false,
+  ctes=,
+}
+[       OK ] BinderTest.BindAgg (0 ms)
+[----------] 1 test from BinderTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"BinderTest.BindAgg" end time: Nov 30 05:14 CST
+"BinderTest.BindAgg" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/150 Testing: BinderTest.BindCrossJoin
+8/150 Test: BinderTest.BindCrossJoin
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/binder_test" "--gtest_filter=BinderTest.BindCrossJoin" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/binder_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"BinderTest.BindCrossJoin" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = BinderTest.BindCrossJoin
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BinderTest
+[ RUN      ] BinderTest.BindCrossJoin
+BoundSelect {
+  table=BoundCrossProductRef { left=BoundBaseTableRef { table=a, oid=1 }, right=BoundBaseTableRef { table=b, oid=2 } },
+  columns=[a.x, a.y, b.x, b.y],
+  groupBy=[],
+  having=,
+  where=(a.x=b.y),
+  limit=,
+  offset=,
+  order_by=[],
+  is_distinct=false,
+  ctes=,
+}
+[       OK ] BinderTest.BindCrossJoin (0 ms)
+[----------] 1 test from BinderTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"BinderTest.BindCrossJoin" end time: Nov 30 05:14 CST
+"BinderTest.BindCrossJoin" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/150 Testing: BinderTest.BindCrossThreeWayJoin
+9/150 Test: BinderTest.BindCrossThreeWayJoin
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/binder_test" "--gtest_filter=BinderTest.BindCrossThreeWayJoin" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/binder_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"BinderTest.BindCrossThreeWayJoin" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = BinderTest.BindCrossThreeWayJoin
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BinderTest
+[ RUN      ] BinderTest.BindCrossThreeWayJoin
+BoundSelect {
+  table=BoundCrossProductRef { left=BoundCrossProductRef { left=BoundBaseTableRef { table=a, oid=1 }, right=BoundBaseTableRef { table=b, oid=2 } }, right=BoundBaseTableRef { table=y, oid=0 } },
+  columns=[a.x, a.y, b.x, b.y, y.x, y.z, y.a, y.b, y.c],
+  groupBy=[],
+  having=,
+  where=((a.x=b.y)and(a.x=y.x)),
+  limit=,
+  offset=,
+  order_by=[],
+  is_distinct=false,
+  ctes=,
+}
+[       OK ] BinderTest.BindCrossThreeWayJoin (0 ms)
+[----------] 1 test from BinderTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"BinderTest.BindCrossThreeWayJoin" end time: Nov 30 05:14 CST
+"BinderTest.BindCrossThreeWayJoin" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/150 Testing: BinderTest.BindJoin
+10/150 Test: BinderTest.BindJoin
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/binder_test" "--gtest_filter=BinderTest.BindJoin" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/binder_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"BinderTest.BindJoin" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = BinderTest.BindJoin
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BinderTest
+[ RUN      ] BinderTest.BindJoin
+BoundSelect {
+  table=BoundJoin { type=Inner, left=BoundBaseTableRef { table=a, oid=1 }, right=BoundBaseTableRef { table=b, oid=2 }, condition=(a.x=b.y) },
+  columns=[a.x, a.y, b.x, b.y],
+  groupBy=[],
+  having=,
+  where=,
+  limit=,
+  offset=,
+  order_by=[],
+  is_distinct=false,
+  ctes=,
+}
+[       OK ] BinderTest.BindJoin (0 ms)
+[----------] 1 test from BinderTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"BinderTest.BindJoin" end time: Nov 30 05:14 CST
+"BinderTest.BindJoin" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/150 Testing: BinderTest.BindThreeWayJoin
+11/150 Test: BinderTest.BindThreeWayJoin
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/binder_test" "--gtest_filter=BinderTest.BindThreeWayJoin" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/binder_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"BinderTest.BindThreeWayJoin" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = BinderTest.BindThreeWayJoin
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BinderTest
+[ RUN      ] BinderTest.BindThreeWayJoin
+BoundSelect {
+  table=BoundJoin { type=Inner, left=BoundJoin { type=Inner, left=BoundBaseTableRef { table=a, oid=1 }, right=BoundBaseTableRef { table=b, oid=2 }, condition=(a.x=b.y) }, right=BoundBaseTableRef { table=y, oid=0 }, condition=(a.x=y.x) },
+  columns=[a.x, a.y, b.x, b.y, y.x, y.z, y.a, y.b, y.c],
+  groupBy=[],
+  having=,
+  where=,
+  limit=,
+  offset=,
+  order_by=[],
+  is_distinct=false,
+  ctes=,
+}
+[       OK ] BinderTest.BindThreeWayJoin (0 ms)
+[----------] 1 test from BinderTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"BinderTest.BindThreeWayJoin" end time: Nov 30 05:14 CST
+"BinderTest.BindThreeWayJoin" time elapsed: 00:00:00
+----------------------------------------------------------
+
+12/150 Testing: BinderTest.BindSelectStar
+12/150 Test: BinderTest.BindSelectStar
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/binder_test" "--gtest_filter=BinderTest.BindSelectStar" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/binder_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"BinderTest.BindSelectStar" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = BinderTest.BindSelectStar
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BinderTest
+[ RUN      ] BinderTest.BindSelectStar
+BoundSelect {
+  table=BoundBaseTableRef { table=y, oid=0 },
+  columns=[y.x, y.z, y.a, y.b, y.c],
+  groupBy=[],
+  having=,
+  where=,
+  limit=,
+  offset=,
+  order_by=[],
+  is_distinct=false,
+  ctes=,
+}
+[       OK ] BinderTest.BindSelectStar (0 ms)
+[----------] 1 test from BinderTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"BinderTest.BindSelectStar" end time: Nov 30 05:14 CST
+"BinderTest.BindSelectStar" time elapsed: 00:00:00
+----------------------------------------------------------
+
+13/150 Testing: BinderTest.BindCountStar
+13/150 Test: BinderTest.BindCountStar
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/binder_test" "--gtest_filter=BinderTest.BindCountStar" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/binder_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"BinderTest.BindCountStar" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = BinderTest.BindCountStar
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BinderTest
+[ RUN      ] BinderTest.BindCountStar
+BoundSelect {
+  table=BoundBaseTableRef { table=y, oid=0 },
+  columns=[count_star([])],
+  groupBy=[],
+  having=,
+  where=,
+  limit=,
+  offset=,
+  order_by=[],
+  is_distinct=false,
+  ctes=,
+}
+[       OK ] BinderTest.BindCountStar (0 ms)
+[----------] 1 test from BinderTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"BinderTest.BindCountStar" end time: Nov 30 05:14 CST
+"BinderTest.BindCountStar" time elapsed: 00:00:00
+----------------------------------------------------------
+
+14/150 Testing: BinderTest.BindSelectTableColumn
+14/150 Test: BinderTest.BindSelectTableColumn
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/binder_test" "--gtest_filter=BinderTest.BindSelectTableColumn" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/binder_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"BinderTest.BindSelectTableColumn" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = BinderTest.BindSelectTableColumn
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BinderTest
+[ RUN      ] BinderTest.BindSelectTableColumn
+BoundSelect {
+  table=BoundBaseTableRef { table=y, oid=0 },
+  columns=[y.x],
+  groupBy=[],
+  having=,
+  where=,
+  limit=,
+  offset=,
+  order_by=[],
+  is_distinct=false,
+  ctes=,
+}
+[       OK ] BinderTest.BindSelectTableColumn (0 ms)
+[----------] 1 test from BinderTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"BinderTest.BindSelectTableColumn" end time: Nov 30 05:14 CST
+"BinderTest.BindSelectTableColumn" time elapsed: 00:00:00
+----------------------------------------------------------
+
+15/150 Testing: BinderTest.FailBindUnknownColumn
+15/150 Test: BinderTest.FailBindUnknownColumn
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/binder_test" "--gtest_filter=BinderTest.FailBindUnknownColumn" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/binder_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"BinderTest.FailBindUnknownColumn" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = BinderTest.FailBindUnknownColumn
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BinderTest
+[ RUN      ] BinderTest.FailBindUnknownColumn
+Message :: column zzzz not found
+Message :: column y.zzzz not found
+Message :: column x.zzzz not found
+Message :: unsupported TableReferenceType
+[       OK ] BinderTest.FailBindUnknownColumn (1 ms)
+[----------] 1 test from BinderTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"BinderTest.FailBindUnknownColumn" end time: Nov 30 05:14 CST
+"BinderTest.FailBindUnknownColumn" time elapsed: 00:00:00
+----------------------------------------------------------
+
+16/150 Testing: BinderTest.BindCreateTable
+16/150 Test: BinderTest.BindCreateTable
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/binder_test" "--gtest_filter=BinderTest.BindCreateTable" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/binder_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"BinderTest.BindCreateTable" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = BinderTest.BindCreateTable
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BinderTest
+[ RUN      ] BinderTest.BindCreateTable
+[       OK ] BinderTest.BindCreateTable (0 ms)
+[----------] 1 test from BinderTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"BinderTest.BindCreateTable" end time: Nov 30 05:14 CST
+"BinderTest.BindCreateTable" time elapsed: 00:00:00
+----------------------------------------------------------
+
+17/150 Testing: BinderTest.BindInsert
+17/150 Test: BinderTest.BindInsert
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/binder_test" "--gtest_filter=BinderTest.BindInsert" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/binder_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"BinderTest.BindInsert" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = BinderTest.BindInsert
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BinderTest
+[ RUN      ] BinderTest.BindInsert
+[       OK ] BinderTest.BindInsert (0 ms)
+[----------] 1 test from BinderTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"BinderTest.BindInsert" end time: Nov 30 05:14 CST
+"BinderTest.BindInsert" time elapsed: 00:00:00
+----------------------------------------------------------
+
+18/150 Testing: BinderTest.BindInsertSelect
+18/150 Test: BinderTest.BindInsertSelect
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/binder_test" "--gtest_filter=BinderTest.BindInsertSelect" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/binder_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"BinderTest.BindInsertSelect" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = BinderTest.BindInsertSelect
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BinderTest
+[ RUN      ] BinderTest.BindInsertSelect
+[       OK ] BinderTest.BindInsertSelect (0 ms)
+[----------] 1 test from BinderTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"BinderTest.BindInsertSelect" end time: Nov 30 05:14 CST
+"BinderTest.BindInsertSelect" time elapsed: 00:00:00
+----------------------------------------------------------
+
+19/150 Testing: BinderTest.BindVarchar
+19/150 Test: BinderTest.BindVarchar
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/binder_test" "--gtest_filter=BinderTest.BindVarchar" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/binder_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"BinderTest.BindVarchar" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = BinderTest.BindVarchar
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BinderTest
+[ RUN      ] BinderTest.BindVarchar
+[       OK ] BinderTest.BindVarchar (0 ms)
+[----------] 1 test from BinderTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"BinderTest.BindVarchar" end time: Nov 30 05:14 CST
+"BinderTest.BindVarchar" time elapsed: 00:00:00
+----------------------------------------------------------
+
+20/150 Testing: BinderTest.BindAliasInAgg
+20/150 Test: BinderTest.BindAliasInAgg
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/binder_test" "--gtest_filter=BinderTest.BindAliasInAgg" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/binder_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"BinderTest.BindAliasInAgg" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = BinderTest.BindAliasInAgg
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BinderTest
+[ RUN      ] BinderTest.BindAliasInAgg
+BoundSelect {
+  table=BoundBaseTableRef { table=y, oid=0 },
+  columns=[y.z, (max([y.a]) as max_a), min([y.b]), first([y.c])],
+  groupBy=[y.z],
+  having=(max([y.a])>0),
+  where=,
+  limit=,
+  offset=,
+  order_by=[],
+  is_distinct=false,
+  ctes=,
+}
+[       OK ] BinderTest.BindAliasInAgg (0 ms)
+[----------] 1 test from BinderTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"BinderTest.BindAliasInAgg" end time: Nov 30 05:14 CST
+"BinderTest.BindAliasInAgg" time elapsed: 00:00:00
+----------------------------------------------------------
+
+21/150 Testing: BinderTest.BindAlias
+21/150 Test: BinderTest.BindAlias
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/binder_test" "--gtest_filter=BinderTest.BindAlias" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/binder_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"BinderTest.BindAlias" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = BinderTest.BindAlias
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BinderTest
+[ RUN      ] BinderTest.BindAlias
+BoundSelect {
+  table=BoundBaseTableRef { table=y, oid=0 },
+  columns=[(y.a as a2)],
+  groupBy=[],
+  having=,
+  where=,
+  limit=,
+  offset=,
+  order_by=[],
+  is_distinct=false,
+  ctes=,
+}
+[       OK ] BinderTest.BindAlias (0 ms)
+[----------] 1 test from BinderTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"BinderTest.BindAlias" end time: Nov 30 05:14 CST
+"BinderTest.BindAlias" time elapsed: 00:00:00
+----------------------------------------------------------
+
+22/150 Testing: BinderTest.BindUnaryOp
+22/150 Test: BinderTest.BindUnaryOp
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/binder_test" "--gtest_filter=BinderTest.BindUnaryOp" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/binder_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"BinderTest.BindUnaryOp" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = BinderTest.BindUnaryOp
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BinderTest
+[ RUN      ] BinderTest.BindUnaryOp
+BoundSelect {
+  table=BoundBaseTableRef { table=y, oid=0 },
+  columns=[(-y.x)],
+  groupBy=[],
+  having=,
+  where=,
+  limit=,
+  offset=,
+  order_by=[],
+  is_distinct=false,
+  ctes=,
+}
+[       OK ] BinderTest.BindUnaryOp (0 ms)
+[----------] 1 test from BinderTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"BinderTest.BindUnaryOp" end time: Nov 30 05:14 CST
+"BinderTest.BindUnaryOp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+23/150 Testing: BinderTest.BindBinaryOp
+23/150 Test: BinderTest.BindBinaryOp
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/binder_test" "--gtest_filter=BinderTest.BindBinaryOp" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/binder_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"BinderTest.BindBinaryOp" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = BinderTest.BindBinaryOp
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BinderTest
+[ RUN      ] BinderTest.BindBinaryOp
+BoundSelect {
+  table=BoundBaseTableRef { table=y, oid=0 },
+  columns=[(y.x+y.z), (y.z+y.x), (y.x*y.z), (y.x/y.z)],
+  groupBy=[],
+  having=,
+  where=,
+  limit=,
+  offset=,
+  order_by=[],
+  is_distinct=false,
+  ctes=,
+}
+[       OK ] BinderTest.BindBinaryOp (0 ms)
+[----------] 1 test from BinderTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"BinderTest.BindBinaryOp" end time: Nov 30 05:14 CST
+"BinderTest.BindBinaryOp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+24/150 Testing: BinderTest.BindUncorrelatedSubquery
+24/150 Test: BinderTest.BindUncorrelatedSubquery
+Command: ""
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"BinderTest.BindUncorrelatedSubquery" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"BinderTest.BindUncorrelatedSubquery" end time: Nov 30 05:14 CST
+"BinderTest.BindUncorrelatedSubquery" time elapsed: 00:00:00
+----------------------------------------------------------
+
+25/150 Testing: BinderTest.BindUpdate
+25/150 Test: BinderTest.BindUpdate
+Command: ""
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"BinderTest.BindUpdate" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"BinderTest.BindUpdate" end time: Nov 30 05:14 CST
+"BinderTest.BindUpdate" time elapsed: 00:00:00
+----------------------------------------------------------
+
+26/150 Testing: BinderTest.BindDelete
+26/150 Test: BinderTest.BindDelete
+Command: ""
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"BinderTest.BindDelete" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"BinderTest.BindDelete" end time: Nov 30 05:14 CST
+"BinderTest.BindDelete" time elapsed: 00:00:00
+----------------------------------------------------------
+
+27/150 Testing: BufferPoolManagerInstanceTest.SampleTest
+27/150 Test: BufferPoolManagerInstanceTest.SampleTest
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/buffer_pool_manager_instance_test" "--gtest_filter=BufferPoolManagerInstanceTest.SampleTest" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/buffer_pool_manager_instance_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"BufferPoolManagerInstanceTest.SampleTest" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = BufferPoolManagerInstanceTest.SampleTest
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BufferPoolManagerInstanceTest
+[ RUN      ] BufferPoolManagerInstanceTest.SampleTest
+[       OK ] BufferPoolManagerInstanceTest.SampleTest (0 ms)
+[----------] 1 test from BufferPoolManagerInstanceTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"BufferPoolManagerInstanceTest.SampleTest" end time: Nov 30 05:14 CST
+"BufferPoolManagerInstanceTest.SampleTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+28/150 Testing: BufferPoolManagerInstanceTest.BinaryDataTest
+28/150 Test: BufferPoolManagerInstanceTest.BinaryDataTest
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/buffer_pool_manager_instance_test" "--gtest_filter=BufferPoolManagerInstanceTest.BinaryDataTest" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/buffer_pool_manager_instance_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"BufferPoolManagerInstanceTest.BinaryDataTest" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = BufferPoolManagerInstanceTest.BinaryDataTest
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BufferPoolManagerInstanceTest
+[ RUN      ] BufferPoolManagerInstanceTest.BinaryDataTest
+[       OK ] BufferPoolManagerInstanceTest.BinaryDataTest (0 ms)
+[----------] 1 test from BufferPoolManagerInstanceTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"BufferPoolManagerInstanceTest.BinaryDataTest" end time: Nov 30 05:14 CST
+"BufferPoolManagerInstanceTest.BinaryDataTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+29/150 Testing: BufferPoolManagerInstanceTest.NewPage
+29/150 Test: BufferPoolManagerInstanceTest.NewPage
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/buffer_pool_manager_instance_test" "--gtest_filter=BufferPoolManagerInstanceTest.NewPage" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/buffer_pool_manager_instance_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"BufferPoolManagerInstanceTest.NewPage" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = BufferPoolManagerInstanceTest.NewPage
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BufferPoolManagerInstanceTest
+[ RUN      ] BufferPoolManagerInstanceTest.NewPage
+[       OK ] BufferPoolManagerInstanceTest.NewPage (1 ms)
+[----------] 1 test from BufferPoolManagerInstanceTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"BufferPoolManagerInstanceTest.NewPage" end time: Nov 30 05:14 CST
+"BufferPoolManagerInstanceTest.NewPage" time elapsed: 00:00:00
+----------------------------------------------------------
+
+30/150 Testing: BufferPoolManagerInstanceTest.UnpinPage
+30/150 Test: BufferPoolManagerInstanceTest.UnpinPage
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/buffer_pool_manager_instance_test" "--gtest_filter=BufferPoolManagerInstanceTest.UnpinPage" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/buffer_pool_manager_instance_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"BufferPoolManagerInstanceTest.UnpinPage" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = BufferPoolManagerInstanceTest.UnpinPage
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BufferPoolManagerInstanceTest
+[ RUN      ] BufferPoolManagerInstanceTest.UnpinPage
+[       OK ] BufferPoolManagerInstanceTest.UnpinPage (0 ms)
+[----------] 1 test from BufferPoolManagerInstanceTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"BufferPoolManagerInstanceTest.UnpinPage" end time: Nov 30 05:14 CST
+"BufferPoolManagerInstanceTest.UnpinPage" time elapsed: 00:00:00
+----------------------------------------------------------
+
+31/150 Testing: BufferPoolManagerInstanceTest.FetchPage
+31/150 Test: BufferPoolManagerInstanceTest.FetchPage
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/buffer_pool_manager_instance_test" "--gtest_filter=BufferPoolManagerInstanceTest.FetchPage" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/buffer_pool_manager_instance_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"BufferPoolManagerInstanceTest.FetchPage" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = BufferPoolManagerInstanceTest.FetchPage
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BufferPoolManagerInstanceTest
+[ RUN      ] BufferPoolManagerInstanceTest.FetchPage
+[       OK ] BufferPoolManagerInstanceTest.FetchPage (1 ms)
+[----------] 1 test from BufferPoolManagerInstanceTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"BufferPoolManagerInstanceTest.FetchPage" end time: Nov 30 05:14 CST
+"BufferPoolManagerInstanceTest.FetchPage" time elapsed: 00:00:00
+----------------------------------------------------------
+
+32/150 Testing: BufferPoolManagerInstanceTest.DeletePage
+32/150 Test: BufferPoolManagerInstanceTest.DeletePage
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/buffer_pool_manager_instance_test" "--gtest_filter=BufferPoolManagerInstanceTest.DeletePage" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/buffer_pool_manager_instance_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"BufferPoolManagerInstanceTest.DeletePage" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = BufferPoolManagerInstanceTest.DeletePage
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BufferPoolManagerInstanceTest
+[ RUN      ] BufferPoolManagerInstanceTest.DeletePage
+[       OK ] BufferPoolManagerInstanceTest.DeletePage (1 ms)
+[----------] 1 test from BufferPoolManagerInstanceTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"BufferPoolManagerInstanceTest.DeletePage" end time: Nov 30 05:14 CST
+"BufferPoolManagerInstanceTest.DeletePage" time elapsed: 00:00:00
+----------------------------------------------------------
+
+33/150 Testing: BufferPoolManagerInstanceTest.IsDirty
+33/150 Test: BufferPoolManagerInstanceTest.IsDirty
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/buffer_pool_manager_instance_test" "--gtest_filter=BufferPoolManagerInstanceTest.IsDirty" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/buffer_pool_manager_instance_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"BufferPoolManagerInstanceTest.IsDirty" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = BufferPoolManagerInstanceTest.IsDirty
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BufferPoolManagerInstanceTest
+[ RUN      ] BufferPoolManagerInstanceTest.IsDirty
+[       OK ] BufferPoolManagerInstanceTest.IsDirty (0 ms)
+[----------] 1 test from BufferPoolManagerInstanceTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"BufferPoolManagerInstanceTest.IsDirty" end time: Nov 30 05:14 CST
+"BufferPoolManagerInstanceTest.IsDirty" time elapsed: 00:00:00
+----------------------------------------------------------
+
+34/150 Testing: BufferPoolManagerInstanceTest.ConcurrencyTest
+34/150 Test: BufferPoolManagerInstanceTest.ConcurrencyTest
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/buffer_pool_manager_instance_test" "--gtest_filter=BufferPoolManagerInstanceTest.ConcurrencyTest" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/buffer_pool_manager_instance_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"BufferPoolManagerInstanceTest.ConcurrencyTest" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = BufferPoolManagerInstanceTest.ConcurrencyTest
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BufferPoolManagerInstanceTest
+[ RUN      ] BufferPoolManagerInstanceTest.ConcurrencyTest
+[       OK ] BufferPoolManagerInstanceTest.ConcurrencyTest (148 ms)
+[----------] 1 test from BufferPoolManagerInstanceTest (148 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (148 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.21 sec
+----------------------------------------------------------
+Test Passed.
+"BufferPoolManagerInstanceTest.ConcurrencyTest" end time: Nov 30 05:14 CST
+"BufferPoolManagerInstanceTest.ConcurrencyTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+35/150 Testing: BufferPoolManagerInstanceTest.IntegratedTest
+35/150 Test: BufferPoolManagerInstanceTest.IntegratedTest
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/buffer_pool_manager_instance_test" "--gtest_filter=BufferPoolManagerInstanceTest.IntegratedTest" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/buffer_pool_manager_instance_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"BufferPoolManagerInstanceTest.IntegratedTest" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = BufferPoolManagerInstanceTest.IntegratedTest
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BufferPoolManagerInstanceTest
+[ RUN      ] BufferPoolManagerInstanceTest.IntegratedTest
+[       OK ] BufferPoolManagerInstanceTest.IntegratedTest (295 ms)
+[----------] 1 test from BufferPoolManagerInstanceTest (295 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (295 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.36 sec
+----------------------------------------------------------
+Test Passed.
+"BufferPoolManagerInstanceTest.IntegratedTest" end time: Nov 30 05:14 CST
+"BufferPoolManagerInstanceTest.IntegratedTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+36/150 Testing: BufferPoolManagerInstanceTest.HardTest_1
+36/150 Test: BufferPoolManagerInstanceTest.HardTest_1
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/buffer_pool_manager_instance_test" "--gtest_filter=BufferPoolManagerInstanceTest.HardTest_1" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/buffer_pool_manager_instance_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"BufferPoolManagerInstanceTest.HardTest_1" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = BufferPoolManagerInstanceTest.HardTest_1
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BufferPoolManagerInstanceTest
+[ RUN      ] BufferPoolManagerInstanceTest.HardTest_1
+[       OK ] BufferPoolManagerInstanceTest.HardTest_1 (402 ms)
+[----------] 1 test from BufferPoolManagerInstanceTest (402 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (402 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.46 sec
+----------------------------------------------------------
+Test Passed.
+"BufferPoolManagerInstanceTest.HardTest_1" end time: Nov 30 05:14 CST
+"BufferPoolManagerInstanceTest.HardTest_1" time elapsed: 00:00:00
+----------------------------------------------------------
+
+37/150 Testing: BufferPoolManagerInstanceTest.HardTest_2
+37/150 Test: BufferPoolManagerInstanceTest.HardTest_2
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/buffer_pool_manager_instance_test" "--gtest_filter=BufferPoolManagerInstanceTest.HardTest_2" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/buffer_pool_manager_instance_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"BufferPoolManagerInstanceTest.HardTest_2" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = BufferPoolManagerInstanceTest.HardTest_2
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BufferPoolManagerInstanceTest
+[ RUN      ] BufferPoolManagerInstanceTest.HardTest_2
+[       OK ] BufferPoolManagerInstanceTest.HardTest_2 (298 ms)
+[----------] 1 test from BufferPoolManagerInstanceTest (298 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (298 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.37 sec
+----------------------------------------------------------
+Test Passed.
+"BufferPoolManagerInstanceTest.HardTest_2" end time: Nov 30 05:14 CST
+"BufferPoolManagerInstanceTest.HardTest_2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+38/150 Testing: BufferPoolManagerInstanceTest.HardTest_3
+38/150 Test: BufferPoolManagerInstanceTest.HardTest_3
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/buffer_pool_manager_instance_test" "--gtest_filter=BufferPoolManagerInstanceTest.HardTest_3" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/buffer_pool_manager_instance_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"BufferPoolManagerInstanceTest.HardTest_3" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = BufferPoolManagerInstanceTest.HardTest_3
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BufferPoolManagerInstanceTest
+[ RUN      ] BufferPoolManagerInstanceTest.HardTest_3
+[       OK ] BufferPoolManagerInstanceTest.HardTest_3 (460 ms)
+[----------] 1 test from BufferPoolManagerInstanceTest (460 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (460 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.53 sec
+----------------------------------------------------------
+Test Passed.
+"BufferPoolManagerInstanceTest.HardTest_3" end time: Nov 30 05:14 CST
+"BufferPoolManagerInstanceTest.HardTest_3" time elapsed: 00:00:00
+----------------------------------------------------------
+
+39/150 Testing: BufferPoolManagerInstanceTest.HardTest_4
+39/150 Test: BufferPoolManagerInstanceTest.HardTest_4
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/buffer_pool_manager_instance_test" "--gtest_filter=BufferPoolManagerInstanceTest.HardTest_4" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/buffer_pool_manager_instance_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"BufferPoolManagerInstanceTest.HardTest_4" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = BufferPoolManagerInstanceTest.HardTest_4
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BufferPoolManagerInstanceTest
+[ RUN      ] BufferPoolManagerInstanceTest.HardTest_4
+[       OK ] BufferPoolManagerInstanceTest.HardTest_4 (1609 ms)
+[----------] 1 test from BufferPoolManagerInstanceTest (1609 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1609 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   1.67 sec
+----------------------------------------------------------
+Test Passed.
+"BufferPoolManagerInstanceTest.HardTest_4" end time: Nov 30 05:14 CST
+"BufferPoolManagerInstanceTest.HardTest_4" time elapsed: 00:00:01
+----------------------------------------------------------
+
+40/150 Testing: ClockReplacerTest.SampleTest
+40/150 Test: ClockReplacerTest.SampleTest
+Command: ""
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"ClockReplacerTest.SampleTest" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ClockReplacerTest.SampleTest" end time: Nov 30 05:14 CST
+"ClockReplacerTest.SampleTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+41/150 Testing: LRUKReplacerTest.SampleTest
+41/150 Test: LRUKReplacerTest.SampleTest
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/lru_k_replacer_test" "--gtest_filter=LRUKReplacerTest.SampleTest" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/lru_k_replacer_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"LRUKReplacerTest.SampleTest" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = LRUKReplacerTest.SampleTest
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from LRUKReplacerTest
+[ RUN      ] LRUKReplacerTest.SampleTest
+[       OK ] LRUKReplacerTest.SampleTest (0 ms)
+[----------] 1 test from LRUKReplacerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"LRUKReplacerTest.SampleTest" end time: Nov 30 05:14 CST
+"LRUKReplacerTest.SampleTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+42/150 Testing: LRUKReplacerTest.Evict
+42/150 Test: LRUKReplacerTest.Evict
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/lru_k_replacer_test" "--gtest_filter=LRUKReplacerTest.Evict" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/lru_k_replacer_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"LRUKReplacerTest.Evict" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = LRUKReplacerTest.Evict
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from LRUKReplacerTest
+[ RUN      ] LRUKReplacerTest.Evict
+[       OK ] LRUKReplacerTest.Evict (14 ms)
+[----------] 1 test from LRUKReplacerTest (14 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (14 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.07 sec
+----------------------------------------------------------
+Test Passed.
+"LRUKReplacerTest.Evict" end time: Nov 30 05:14 CST
+"LRUKReplacerTest.Evict" time elapsed: 00:00:00
+----------------------------------------------------------
+
+43/150 Testing: LRUKReplacerTest.Size
+43/150 Test: LRUKReplacerTest.Size
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/lru_k_replacer_test" "--gtest_filter=LRUKReplacerTest.Size" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/lru_k_replacer_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"LRUKReplacerTest.Size" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = LRUKReplacerTest.Size
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from LRUKReplacerTest
+[ RUN      ] LRUKReplacerTest.Size
+[       OK ] LRUKReplacerTest.Size (0 ms)
+[----------] 1 test from LRUKReplacerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"LRUKReplacerTest.Size" end time: Nov 30 05:14 CST
+"LRUKReplacerTest.Size" time elapsed: 00:00:00
+----------------------------------------------------------
+
+44/150 Testing: LRUKReplacerTest.ConcurrencyTest
+44/150 Test: LRUKReplacerTest.ConcurrencyTest
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/lru_k_replacer_test" "--gtest_filter=LRUKReplacerTest.ConcurrencyTest" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/lru_k_replacer_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"LRUKReplacerTest.ConcurrencyTest" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = LRUKReplacerTest.ConcurrencyTest
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from LRUKReplacerTest
+[ RUN      ] LRUKReplacerTest.ConcurrencyTest
+[       OK ] LRUKReplacerTest.ConcurrencyTest (51 ms)
+[----------] 1 test from LRUKReplacerTest (51 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (51 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.11 sec
+----------------------------------------------------------
+Test Passed.
+"LRUKReplacerTest.ConcurrencyTest" end time: Nov 30 05:14 CST
+"LRUKReplacerTest.ConcurrencyTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+45/150 Testing: LRUReplacerTest.SampleTest
+45/150 Test: LRUReplacerTest.SampleTest
+Command: ""
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"LRUReplacerTest.SampleTest" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"LRUReplacerTest.SampleTest" end time: Nov 30 05:14 CST
+"LRUReplacerTest.SampleTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+46/150 Testing: CatalogTest.CreateTable1
+46/150 Test: CatalogTest.CreateTable1
+Command: ""
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"CatalogTest.CreateTable1" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"CatalogTest.CreateTable1" end time: Nov 30 05:14 CST
+"CatalogTest.CreateTable1" time elapsed: 00:00:00
+----------------------------------------------------------
+
+47/150 Testing: CatalogTest.CreateTable2
+47/150 Test: CatalogTest.CreateTable2
+Command: ""
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"CatalogTest.CreateTable2" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"CatalogTest.CreateTable2" end time: Nov 30 05:14 CST
+"CatalogTest.CreateTable2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+48/150 Testing: CatalogTest.CreateTable3
+48/150 Test: CatalogTest.CreateTable3
+Command: ""
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"CatalogTest.CreateTable3" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"CatalogTest.CreateTable3" end time: Nov 30 05:14 CST
+"CatalogTest.CreateTable3" time elapsed: 00:00:00
+----------------------------------------------------------
+
+49/150 Testing: CatalogTest.CreateTableTest
+49/150 Test: CatalogTest.CreateTableTest
+Command: ""
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"CatalogTest.CreateTableTest" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"CatalogTest.CreateTableTest" end time: Nov 30 05:14 CST
+"CatalogTest.CreateTableTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+50/150 Testing: CatalogTest.CreateIndex1
+50/150 Test: CatalogTest.CreateIndex1
+Command: ""
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"CatalogTest.CreateIndex1" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"CatalogTest.CreateIndex1" end time: Nov 30 05:14 CST
+"CatalogTest.CreateIndex1" time elapsed: 00:00:00
+----------------------------------------------------------
+
+51/150 Testing: CatalogTest.CreateIndex2
+51/150 Test: CatalogTest.CreateIndex2
+Command: ""
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"CatalogTest.CreateIndex2" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"CatalogTest.CreateIndex2" end time: Nov 30 05:14 CST
+"CatalogTest.CreateIndex2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+52/150 Testing: CatalogTest.CreateIndex3
+52/150 Test: CatalogTest.CreateIndex3
+Command: ""
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"CatalogTest.CreateIndex3" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"CatalogTest.CreateIndex3" end time: Nov 30 05:14 CST
+"CatalogTest.CreateIndex3" time elapsed: 00:00:00
+----------------------------------------------------------
+
+53/150 Testing: CatalogTest.QueryIndex1
+53/150 Test: CatalogTest.QueryIndex1
+Command: ""
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"CatalogTest.QueryIndex1" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"CatalogTest.QueryIndex1" end time: Nov 30 05:14 CST
+"CatalogTest.QueryIndex1" time elapsed: 00:00:00
+----------------------------------------------------------
+
+54/150 Testing: CatalogTest.QueryIndex2
+54/150 Test: CatalogTest.QueryIndex2
+Command: ""
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"CatalogTest.QueryIndex2" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"CatalogTest.QueryIndex2" end time: Nov 30 05:14 CST
+"CatalogTest.QueryIndex2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+55/150 Testing: CatalogTest.FailedQuery1
+55/150 Test: CatalogTest.FailedQuery1
+Command: ""
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"CatalogTest.FailedQuery1" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"CatalogTest.FailedQuery1" end time: Nov 30 05:14 CST
+"CatalogTest.FailedQuery1" time elapsed: 00:00:00
+----------------------------------------------------------
+
+56/150 Testing: CatalogTest.FailedQuery2
+56/150 Test: CatalogTest.FailedQuery2
+Command: ""
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"CatalogTest.FailedQuery2" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"CatalogTest.FailedQuery2" end time: Nov 30 05:14 CST
+"CatalogTest.FailedQuery2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+57/150 Testing: CatalogTest.FailedQuery3
+57/150 Test: CatalogTest.FailedQuery3
+Command: ""
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"CatalogTest.FailedQuery3" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"CatalogTest.FailedQuery3" end time: Nov 30 05:14 CST
+"CatalogTest.FailedQuery3" time elapsed: 00:00:00
+----------------------------------------------------------
+
+58/150 Testing: CatalogTest.FailedQuery4
+58/150 Test: CatalogTest.FailedQuery4
+Command: ""
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"CatalogTest.FailedQuery4" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"CatalogTest.FailedQuery4" end time: Nov 30 05:14 CST
+"CatalogTest.FailedQuery4" time elapsed: 00:00:00
+----------------------------------------------------------
+
+59/150 Testing: CatalogTest.FailedQuery5
+59/150 Test: CatalogTest.FailedQuery5
+Command: ""
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"CatalogTest.FailedQuery5" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"CatalogTest.FailedQuery5" end time: Nov 30 05:14 CST
+"CatalogTest.FailedQuery5" time elapsed: 00:00:00
+----------------------------------------------------------
+
+60/150 Testing: CatalogTest.IndexInteraction0
+60/150 Test: CatalogTest.IndexInteraction0
+Command: ""
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"CatalogTest.IndexInteraction0" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"CatalogTest.IndexInteraction0" end time: Nov 30 05:14 CST
+"CatalogTest.IndexInteraction0" time elapsed: 00:00:00
+----------------------------------------------------------
+
+61/150 Testing: CatalogTest.IndexInteraction1
+61/150 Test: CatalogTest.IndexInteraction1
+Command: ""
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"CatalogTest.IndexInteraction1" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"CatalogTest.IndexInteraction1" end time: Nov 30 05:14 CST
+"CatalogTest.IndexInteraction1" time elapsed: 00:00:00
+----------------------------------------------------------
+
+62/150 Testing: CatalogTest.IndexInteraction2
+62/150 Test: CatalogTest.IndexInteraction2
+Command: ""
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"CatalogTest.IndexInteraction2" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"CatalogTest.IndexInteraction2" end time: Nov 30 05:14 CST
+"CatalogTest.IndexInteraction2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+63/150 Testing: CatalogTest.IndexInteraction3
+63/150 Test: CatalogTest.IndexInteraction3
+Command: ""
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"CatalogTest.IndexInteraction3" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"CatalogTest.IndexInteraction3" end time: Nov 30 05:14 CST
+"CatalogTest.IndexInteraction3" time elapsed: 00:00:00
+----------------------------------------------------------
+
+64/150 Testing: RWLatchTest.BasicTest
+64/150 Test: RWLatchTest.BasicTest
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/rwlatch_test" "--gtest_filter=RWLatchTest.BasicTest" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/rwlatch_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"RWLatchTest.BasicTest" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = RWLatchTest.BasicTest
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from RWLatchTest
+[ RUN      ] RWLatchTest.BasicTest
+[       OK ] RWLatchTest.BasicTest (3 ms)
+[----------] 1 test from RWLatchTest (3 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (3 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.07 sec
+----------------------------------------------------------
+Test Passed.
+"RWLatchTest.BasicTest" end time: Nov 30 05:14 CST
+"RWLatchTest.BasicTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+65/150 Testing: LockManagerDeadlockDetectionTest.EdgeTest
+65/150 Test: LockManagerDeadlockDetectionTest.EdgeTest
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/deadlock_detection_test" "--gtest_filter=LockManagerDeadlockDetectionTest.EdgeTest" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/deadlock_detection_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"LockManagerDeadlockDetectionTest.EdgeTest" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = LockManagerDeadlockDetectionTest.EdgeTest
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from LockManagerDeadlockDetectionTest
+[ RUN      ] LockManagerDeadlockDetectionTest.EdgeTest
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:51: Failure
+Expected equality of these values:
+  (i / 2) + 1
+    Which is: 1
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:46: Failure
+Expected equality of these values:
+  i / 2
+    Which is: 1
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:51: Failure
+Expected equality of these values:
+  (i / 2) + 1
+    Which is: 2
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:46: Failure
+Expected equality of these values:
+  i / 2
+    Which is: 2
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:51: Failure
+Expected equality of these values:
+  (i / 2) + 1
+    Which is: 3
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:46: Failure
+Expected equality of these values:
+  i / 2
+    Which is: 3
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:51: Failure
+Expected equality of these values:
+  (i / 2) + 1
+    Which is: 4
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:46: Failure
+Expected equality of these values:
+  i / 2
+    Which is: 4
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:51: Failure
+Expected equality of these values:
+  (i / 2) + 1
+    Which is: 5
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:46: Failure
+Expected equality of these values:
+  i / 2
+    Which is: 5
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:51: Failure
+Expected equality of these values:
+  (i / 2) + 1
+    Which is: 6
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:46: Failure
+Expected equality of these values:
+  i / 2
+    Which is: 6
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:51: Failure
+Expected equality of these values:
+  (i / 2) + 1
+    Which is: 7
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:46: Failure
+Expected equality of these values:
+  i / 2
+    Which is: 7
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:51: Failure
+Expected equality of these values:
+  (i / 2) + 1
+    Which is: 8
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:46: Failure
+Expected equality of these values:
+  i / 2
+    Which is: 8
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:51: Failure
+Expected equality of these values:
+  (i / 2) + 1
+    Which is: 9
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:46: Failure
+Expected equality of these values:
+  i / 2
+    Which is: 9
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:51: Failure
+Expected equality of these values:
+  (i / 2) + 1
+    Which is: 10
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:46: Failure
+Expected equality of these values:
+  i / 2
+    Which is: 10
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:51: Failure
+Expected equality of these values:
+  (i / 2) + 1
+    Which is: 11
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:46: Failure
+Expected equality of these values:
+  i / 2
+    Which is: 11
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:51: Failure
+Expected equality of these values:
+  (i / 2) + 1
+    Which is: 12
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:46: Failure
+Expected equality of these values:
+  i / 2
+    Which is: 12
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:51: Failure
+Expected equality of these values:
+  (i / 2) + 1
+    Which is: 13
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:46: Failure
+Expected equality of these values:
+  i / 2
+    Which is: 13
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:51: Failure
+Expected equality of these values:
+  (i / 2) + 1
+    Which is: 14
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:46: Failure
+Expected equality of these values:
+  i / 2
+    Which is: 14
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:51: Failure
+Expected equality of these values:
+  (i / 2) + 1
+    Which is: 15
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:46: Failure
+Expected equality of these values:
+  i / 2
+    Which is: 15
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:51: Failure
+Expected equality of these values:
+  (i / 2) + 1
+    Which is: 16
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:46: Failure
+Expected equality of these values:
+  i / 2
+    Which is: 16
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:51: Failure
+Expected equality of these values:
+  (i / 2) + 1
+    Which is: 17
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:46: Failure
+Expected equality of these values:
+  i / 2
+    Which is: 17
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:51: Failure
+Expected equality of these values:
+  (i / 2) + 1
+    Which is: 18
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:46: Failure
+Expected equality of these values:
+  i / 2
+    Which is: 18
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:51: Failure
+Expected equality of these values:
+  (i / 2) + 1
+    Which is: 19
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:46: Failure
+Expected equality of these values:
+  i / 2
+    Which is: 19
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:51: Failure
+Expected equality of these values:
+  (i / 2) + 1
+    Which is: 20
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:46: Failure
+Expected equality of these values:
+  i / 2
+    Which is: 20
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:51: Failure
+Expected equality of these values:
+  (i / 2) + 1
+    Which is: 21
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:46: Failure
+Expected equality of these values:
+  i / 2
+    Which is: 21
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:51: Failure
+Expected equality of these values:
+  (i / 2) + 1
+    Which is: 22
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:46: Failure
+Expected equality of these values:
+  i / 2
+    Which is: 22
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:51: Failure
+Expected equality of these values:
+  (i / 2) + 1
+    Which is: 23
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:46: Failure
+Expected equality of these values:
+  i / 2
+    Which is: 23
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:51: Failure
+Expected equality of these values:
+  (i / 2) + 1
+    Which is: 24
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:46: Failure
+Expected equality of these values:
+  i / 2
+    Which is: 24
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:51: Failure
+Expected equality of these values:
+  (i / 2) + 1
+    Which is: 25
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:46: Failure
+Expected equality of these values:
+  i / 2
+    Which is: 25
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:51: Failure
+Expected equality of these values:
+  (i / 2) + 1
+    Which is: 26
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:46: Failure
+Expected equality of these values:
+  i / 2
+    Which is: 26
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:51: Failure
+Expected equality of these values:
+  (i / 2) + 1
+    Which is: 27
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:46: Failure
+Expected equality of these values:
+  i / 2
+    Which is: 27
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:51: Failure
+Expected equality of these values:
+  (i / 2) + 1
+    Which is: 28
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:46: Failure
+Expected equality of these values:
+  i / 2
+    Which is: 28
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:51: Failure
+Expected equality of these values:
+  (i / 2) + 1
+    Which is: 29
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:46: Failure
+Expected equality of these values:
+  i / 2
+    Which is: 29
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:51: Failure
+Expected equality of these values:
+  (i / 2) + 1
+    Which is: 30
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:46: Failure
+Expected equality of these values:
+  i / 2
+    Which is: 30
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:51: Failure
+Expected equality of these values:
+  (i / 2) + 1
+    Which is: 31
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:46: Failure
+Expected equality of these values:
+  i / 2
+    Which is: 31
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:51: Failure
+Expected equality of these values:
+  (i / 2) + 1
+    Which is: 32
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:46: Failure
+Expected equality of these values:
+  i / 2
+    Which is: 32
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:51: Failure
+Expected equality of these values:
+  (i / 2) + 1
+    Which is: 33
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:46: Failure
+Expected equality of these values:
+  i / 2
+    Which is: 33
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:51: Failure
+Expected equality of these values:
+  (i / 2) + 1
+    Which is: 34
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:46: Failure
+Expected equality of these values:
+  i / 2
+    Which is: 34
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:51: Failure
+Expected equality of these values:
+  (i / 2) + 1
+    Which is: 35
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:46: Failure
+Expected equality of these values:
+  i / 2
+    Which is: 35
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:51: Failure
+Expected equality of these values:
+  (i / 2) + 1
+    Which is: 36
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:46: Failure
+Expected equality of these values:
+  i / 2
+    Which is: 36
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:51: Failure
+Expected equality of these values:
+  (i / 2) + 1
+    Which is: 37
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:46: Failure
+Expected equality of these values:
+  i / 2
+    Which is: 37
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:51: Failure
+Expected equality of these values:
+  (i / 2) + 1
+    Which is: 38
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:46: Failure
+Expected equality of these values:
+  i / 2
+    Which is: 38
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:51: Failure
+Expected equality of these values:
+  (i / 2) + 1
+    Which is: 39
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:46: Failure
+Expected equality of these values:
+  i / 2
+    Which is: 39
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:51: Failure
+Expected equality of these values:
+  (i / 2) + 1
+    Which is: 40
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:46: Failure
+Expected equality of these values:
+  i / 2
+    Which is: 40
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:51: Failure
+Expected equality of these values:
+  (i / 2) + 1
+    Which is: 41
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:46: Failure
+Expected equality of these values:
+  i / 2
+    Which is: 41
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:51: Failure
+Expected equality of these values:
+  (i / 2) + 1
+    Which is: 42
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:46: Failure
+Expected equality of these values:
+  i / 2
+    Which is: 42
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:51: Failure
+Expected equality of these values:
+  (i / 2) + 1
+    Which is: 43
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:46: Failure
+Expected equality of these values:
+  i / 2
+    Which is: 43
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:51: Failure
+Expected equality of these values:
+  (i / 2) + 1
+    Which is: 44
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:46: Failure
+Expected equality of these values:
+  i / 2
+    Which is: 44
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:51: Failure
+Expected equality of these values:
+  (i / 2) + 1
+    Which is: 45
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:46: Failure
+Expected equality of these values:
+  i / 2
+    Which is: 45
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:51: Failure
+Expected equality of these values:
+  (i / 2) + 1
+    Which is: 46
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:46: Failure
+Expected equality of these values:
+  i / 2
+    Which is: 46
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:51: Failure
+Expected equality of these values:
+  (i / 2) + 1
+    Which is: 47
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:46: Failure
+Expected equality of these values:
+  i / 2
+    Which is: 47
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:51: Failure
+Expected equality of these values:
+  (i / 2) + 1
+    Which is: 48
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:46: Failure
+Expected equality of these values:
+  i / 2
+    Which is: 48
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:51: Failure
+Expected equality of these values:
+  (i / 2) + 1
+    Which is: 49
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:46: Failure
+Expected equality of these values:
+  i / 2
+    Which is: 49
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:51: Failure
+Expected equality of these values:
+  (i / 2) + 1
+    Which is: 50
+  lock_mgr.GetEdgeList().size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:56: Failure
+Expected equality of these values:
+  num_edges
+    Which is: 50
+  lock_mgr_edges.size()
+    Which is: 0
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==32480==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000000 (pc 0x000104969ba0 bp 0x00016b4b48b0 sp 0x00016b4b4820 T0)
+==32480==The signal is caused by a READ memory access.
+==32480==Hint: address points to the zero page.
+    #0 0x000104969ba0 in bool std::__1::operator==[abi:ne190102]<int, int, int, int>(std::__1::pair<int, int> const&, std::__1::pair<int, int> const&) pair.h:493
+    #1 0x000104969a8c in testing::AssertionResult testing::internal::CmpHelperEQ<std::__1::pair<int, int>, std::__1::pair<int, int>>(char const*, char const*, std::__1::pair<int, int> const&, std::__1::pair<int, int> const&) gtest.h:1358
+    #2 0x00010494c2d8 in testing::AssertionResult testing::internal::EqHelper::Compare<std::__1::pair<int, int>, std::__1::pair<int, int>, (void*)0>(char const*, char const*, std::__1::pair<int, int> const&, std::__1::pair<int, int> const&) gtest.h:1377
+    #3 0x00010494b284 in bustub::LockManagerDeadlockDetectionTest_EdgeTest_Test::TestBody() deadlock_detection_test.cpp:63
+    #4 0x000104a55290 in void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) gtest.cc:2657
+    #5 0x000104a54cf4 in testing::Test::Run() gtest.cc:2674
+    #6 0x000104a57370 in testing::TestInfo::Run() gtest.cc:2853
+    #7 0x000104a59d24 in testing::TestSuite::Run() gtest.cc:3012
+    #8 0x000104a7c2e8 in testing::internal::UnitTestImpl::RunAllTests() gtest.cc:5870
+    #9 0x000104a7b5e8 in bool testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) gtest.cc:2657
+    #10 0x000104a7ae8c in testing::UnitTest::Run() gtest.cc:5444
+    #11 0x000104b113e0 in RUN_ALL_TESTS() gtest.h:2293
+    #12 0x000104b11344 in main gmock_main.cc:70
+    #13 0x000199f8eb94 in start+0x17b8 (dyld:arm64e+0xfffffffffff3ab94)
+
+==32480==Register values:
+ x[0] = 0x0000615000000080   x[1] = 0x0000000000000000   x[2] = 0x0000615000000080   x[3] = 0x0000000000000000  
+ x[4] = 0x0000000000000001   x[5] = 0x0000000000000018   x[6] = 0x0000615000000210   x[7] = 0x0000000000000001  
+ x[8] = 0x0000000000000000   x[9] = 0x0000000000000001  x[10] = 0x000000016b4b47c0  x[11] = 0x0000000104969864  
+x[12] = 0x000000016b4b4530  x[13] = 0x000000016b4b4528  x[14] = 0x000000016b4b4520  x[15] = 0x000000016b4b3f90  
+x[16] = 0x0000000104969a60  x[17] = 0x00000001056a04f8  x[18] = 0x0000000000000000  x[19] = 0x000000016b4b5020  
+x[20] = 0x00000002081c0018  x[21] = 0x000000016b4b6518  x[22] = 0x0fffffff0009d5d6  x[23] = 0x00000002081c0018  
+x[24] = 0x00000002081c0150  x[25] = 0x000000016b4b6680  x[26] = 0x0000000000000000  x[27] = 0x0000000000000000  
+x[28] = 0x0000000000000000     fp = 0x000000016b4b48b0     lr = 0x0000000104969a90     sp = 0x000000016b4b4820  
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV pair.h:493 in bool std::__1::operator==[abi:ne190102]<int, int, int, int>(std::__1::pair<int, int> const&, std::__1::pair<int, int> const&)
+==32480==ABORTING
+<end of output>
+Test time =   0.41 sec
+----------------------------------------------------------
+Test Failed.
+"LockManagerDeadlockDetectionTest.EdgeTest" end time: Nov 30 05:14 CST
+"LockManagerDeadlockDetectionTest.EdgeTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+66/150 Testing: LockManagerDeadlockDetectionTest.BasicDeadlockDetectionTest
+66/150 Test: LockManagerDeadlockDetectionTest.BasicDeadlockDetectionTest
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/deadlock_detection_test" "--gtest_filter=LockManagerDeadlockDetectionTest.BasicDeadlockDetectionTest" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/deadlock_detection_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"LockManagerDeadlockDetectionTest.BasicDeadlockDetectionTest" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = LockManagerDeadlockDetectionTest.BasicDeadlockDetectionTest
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from LockManagerDeadlockDetectionTest
+[ RUN      ] LockManagerDeadlockDetectionTest.BasicDeadlockDetectionTest
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:111: Failure
+Expected equality of these values:
+  res
+    Which is: true
+  false
+/Users/cscs/Downloads/bustub_initial/test/concurrency/deadlock_detection_test.cpp:113: Failure
+Expected equality of these values:
+  TransactionState::ABORTED
+    Which is: 4-byte object <03-00 00-00>
+  txn1->GetState()
+    Which is: 4-byte object <00-00 00-00>
+[  FAILED  ] LockManagerDeadlockDetectionTest.BasicDeadlockDetectionTest (108 ms)
+[----------] 1 test from LockManagerDeadlockDetectionTest (108 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (108 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] LockManagerDeadlockDetectionTest.BasicDeadlockDetectionTest
+
+ 1 FAILED TEST
+<end of output>
+Test time =   0.16 sec
+----------------------------------------------------------
+Test Failed.
+"LockManagerDeadlockDetectionTest.BasicDeadlockDetectionTest" end time: Nov 30 05:14 CST
+"LockManagerDeadlockDetectionTest.BasicDeadlockDetectionTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+67/150 Testing: LockManagerTest.CompatibilityTest1
+67/150 Test: LockManagerTest.CompatibilityTest1
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/lock_manager_compability_test" "--gtest_filter=LockManagerTest.CompatibilityTest1" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/lock_manager_compability_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"LockManagerTest.CompatibilityTest1" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = LockManagerTest.CompatibilityTest1
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from LockManagerTest
+[ RUN      ] LockManagerTest.CompatibilityTest1
+/Users/cscs/Downloads/bustub_initial/test/concurrency/lock_manager_compability_test.cpp:60: Failure
+Expected equality of these values:
+  is_size
+    Which is: 1
+  txn->GetIntentionSharedTableLockSet()->size()
+    Which is: 0
+[  FAILED  ] LockManagerTest.CompatibilityTest1 (108 ms)
+[----------] 1 test from LockManagerTest (108 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (108 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] LockManagerTest.CompatibilityTest1
+
+ 1 FAILED TEST
+<end of output>
+Test time =   0.16 sec
+----------------------------------------------------------
+Test Failed.
+"LockManagerTest.CompatibilityTest1" end time: Nov 30 05:14 CST
+"LockManagerTest.CompatibilityTest1" time elapsed: 00:00:00
+----------------------------------------------------------
+
+68/150 Testing: LockManagerTest.CompatibilityTest2
+68/150 Test: LockManagerTest.CompatibilityTest2
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/lock_manager_compability_test" "--gtest_filter=LockManagerTest.CompatibilityTest2" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/lock_manager_compability_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"LockManagerTest.CompatibilityTest2" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = LockManagerTest.CompatibilityTest2
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from LockManagerTest
+[ RUN      ] LockManagerTest.CompatibilityTest2
+/Users/cscs/Downloads/bustub_initial/test/concurrency/lock_manager_compability_test.cpp:60: Failure
+Expected equality of these values:
+  is_size
+    Which is: 1
+  txn->GetIntentionSharedTableLockSet()->size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/lock_manager_compability_test.cpp:61: Failure
+Expected equality of these values:
+  ix_size
+    Which is: 1
+  txn->GetIntentionExclusiveTableLockSet()->size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/lock_manager_compability_test.cpp:60: Failure
+Expected equality of these values:
+  is_size
+    Which is: 1
+  txn->GetIntentionSharedTableLockSet()->size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/lock_manager_compability_test.cpp:62: Failure
+Expected equality of these values:
+  six_size
+    Which is: 1
+  txn->GetSharedIntentionExclusiveTableLockSet()->size()
+    Which is: 0
+[  FAILED  ] LockManagerTest.CompatibilityTest2 (105 ms)
+[----------] 1 test from LockManagerTest (105 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (106 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] LockManagerTest.CompatibilityTest2
+
+ 1 FAILED TEST
+<end of output>
+Test time =   0.16 sec
+----------------------------------------------------------
+Test Failed.
+"LockManagerTest.CompatibilityTest2" end time: Nov 30 05:14 CST
+"LockManagerTest.CompatibilityTest2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+69/150 Testing: LockManagerTest.CompatibilityTest3
+69/150 Test: LockManagerTest.CompatibilityTest3
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/lock_manager_compability_test" "--gtest_filter=LockManagerTest.CompatibilityTest3" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/lock_manager_compability_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"LockManagerTest.CompatibilityTest3" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = LockManagerTest.CompatibilityTest3
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from LockManagerTest
+[ RUN      ] LockManagerTest.CompatibilityTest3
+/Users/cscs/Downloads/bustub_initial/test/concurrency/lock_manager_compability_test.cpp:62: Failure
+Expected equality of these values:
+  six_size
+    Which is: 1
+  txn->GetSharedIntentionExclusiveTableLockSet()->size()
+    Which is: 0
+/Users/cscs/Downloads/bustub_initial/test/concurrency/lock_manager_compability_test.cpp:60: Failure
+Expected equality of these values:
+  is_size
+    Which is: 1
+  txn->GetIntentionSharedTableLockSet()->size()
+    Which is: 0
+[  FAILED  ] LockManagerTest.CompatibilityTest3 (108 ms)
+[----------] 1 test from LockManagerTest (108 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (108 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] LockManagerTest.CompatibilityTest3
+
+ 1 FAILED TEST
+<end of output>
+Test time =   0.16 sec
+----------------------------------------------------------
+Test Failed.
+"LockManagerTest.CompatibilityTest3" end time: Nov 30 05:14 CST
+"LockManagerTest.CompatibilityTest3" time elapsed: 00:00:00
+----------------------------------------------------------
+
+70/150 Testing: LockManagerTest.RepeatableRead
+70/150 Test: LockManagerTest.RepeatableRead
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/lock_manager_isolation_test" "--gtest_filter=LockManagerTest.RepeatableRead" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/lock_manager_isolation_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"LockManagerTest.RepeatableRead" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = LockManagerTest.RepeatableRead
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from LockManagerTest
+[ RUN      ] LockManagerTest.RepeatableRead
+x: create schema
+Table created with id = 0 
+x: initialize data
+
+Exception Type :: Not implemented
+Message :: InsertExecutor is not implemented
+libc++abi: terminating due to uncaught exception of type bustub::NotImplementedException: InsertExecutor is not implemented
+<end of output>
+Test time =   0.08 sec
+----------------------------------------------------------
+Test Failed.
+"LockManagerTest.RepeatableRead" end time: Nov 30 05:14 CST
+"LockManagerTest.RepeatableRead" time elapsed: 00:00:00
+----------------------------------------------------------
+
+71/150 Testing: LockManagerTest.Readcommited
+71/150 Test: LockManagerTest.Readcommited
+Command: ""
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"LockManagerTest.Readcommited" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"LockManagerTest.Readcommited" end time: Nov 30 05:14 CST
+"LockManagerTest.Readcommited" time elapsed: 00:00:00
+----------------------------------------------------------
+
+72/150 Testing: LockManagerTest.TableLockTest1
+72/150 Test: LockManagerTest.TableLockTest1
+Command: ""
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"LockManagerTest.TableLockTest1" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"LockManagerTest.TableLockTest1" end time: Nov 30 05:14 CST
+"LockManagerTest.TableLockTest1" time elapsed: 00:00:00
+----------------------------------------------------------
+
+73/150 Testing: LockManagerTest.TableLockUpgradeTest1
+73/150 Test: LockManagerTest.TableLockUpgradeTest1
+Command: ""
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"LockManagerTest.TableLockUpgradeTest1" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"LockManagerTest.TableLockUpgradeTest1" end time: Nov 30 05:14 CST
+"LockManagerTest.TableLockUpgradeTest1" time elapsed: 00:00:00
+----------------------------------------------------------
+
+74/150 Testing: LockManagerTest.RowLockTest1
+74/150 Test: LockManagerTest.RowLockTest1
+Command: ""
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"LockManagerTest.RowLockTest1" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"LockManagerTest.RowLockTest1" end time: Nov 30 05:14 CST
+"LockManagerTest.RowLockTest1" time elapsed: 00:00:00
+----------------------------------------------------------
+
+75/150 Testing: LockManagerTest.TwoPLTest1
+75/150 Test: LockManagerTest.TwoPLTest1
+Command: ""
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"LockManagerTest.TwoPLTest1" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"LockManagerTest.TwoPLTest1" end time: Nov 30 05:14 CST
+"LockManagerTest.TwoPLTest1" time elapsed: 00:00:00
+----------------------------------------------------------
+
+76/150 Testing: LockManagerTest.CompatibilityTest
+76/150 Test: LockManagerTest.CompatibilityTest
+Command: ""
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"LockManagerTest.CompatibilityTest" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"LockManagerTest.CompatibilityTest" end time: Nov 30 05:14 CST
+"LockManagerTest.CompatibilityTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+77/150 Testing: LockManagerTest.AbortTest1
+77/150 Test: LockManagerTest.AbortTest1
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/lock_manager_test" "--gtest_filter=LockManagerTest.AbortTest1" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/lock_manager_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"LockManagerTest.AbortTest1" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = LockManagerTest.AbortTest1
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from LockManagerTest
+[ RUN      ] LockManagerTest.AbortTest1
+/Users/cscs/Downloads/bustub_initial/test/concurrency/lock_manager_test.cpp:608: Failure
+Value of: res
+  Actual: true
+Expected: false
+/Users/cscs/Downloads/bustub_initial/test/concurrency/lock_manager_test.cpp:610: Failure
+Expected equality of these values:
+  TransactionState::ABORTED
+    Which is: 4-byte object <03-00 00-00>
+  txn1->GetState()
+    Which is: 4-byte object <00-00 00-00>
+[  FAILED  ] LockManagerTest.AbortTest1 (110 ms)
+[----------] 1 test from LockManagerTest (110 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (110 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] LockManagerTest.AbortTest1
+
+ 1 FAILED TEST
+<end of output>
+Test time =   0.19 sec
+----------------------------------------------------------
+Test Failed.
+"LockManagerTest.AbortTest1" end time: Nov 30 05:14 CST
+"LockManagerTest.AbortTest1" time elapsed: 00:00:00
+----------------------------------------------------------
+
+78/150 Testing: LockManagerTest.UpgradeTest
+78/150 Test: LockManagerTest.UpgradeTest
+Command: ""
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"LockManagerTest.UpgradeTest" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"LockManagerTest.UpgradeTest" end time: Nov 30 05:14 CST
+"LockManagerTest.UpgradeTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+79/150 Testing: LockManagerTest.UpgradeTest1
+79/150 Test: LockManagerTest.UpgradeTest1
+Command: ""
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"LockManagerTest.UpgradeTest1" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"LockManagerTest.UpgradeTest1" end time: Nov 30 05:14 CST
+"LockManagerTest.UpgradeTest1" time elapsed: 00:00:00
+----------------------------------------------------------
+
+80/150 Testing: LockManagerTest.MixedTest
+80/150 Test: LockManagerTest.MixedTest
+Command: ""
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"LockManagerTest.MixedTest" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"LockManagerTest.MixedTest" end time: Nov 30 05:14 CST
+"LockManagerTest.MixedTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+81/150 Testing: TransactionTest.SimpleInsertRollbackTest
+81/150 Test: TransactionTest.SimpleInsertRollbackTest
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/transaction_test" "--gtest_filter=TransactionTest.SimpleInsertRollbackTest" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/transaction_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"TransactionTest.SimpleInsertRollbackTest" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = TransactionTest.SimpleInsertRollbackTest
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TransactionTest
+[ RUN      ] TransactionTest.SimpleInsertRollbackTest
+
+Exception Type :: Not implemented
+Message :: InsertExecutor is not implemented
+libc++abi: terminating due to uncaught exception of type bustub::NotImplementedException: InsertExecutor is not implemented
+<end of output>
+Test time =   0.09 sec
+----------------------------------------------------------
+Test Failed.
+"TransactionTest.SimpleInsertRollbackTest" end time: Nov 30 05:14 CST
+"TransactionTest.SimpleInsertRollbackTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+82/150 Testing: TransactionTest.DirtyReadsTest
+82/150 Test: TransactionTest.DirtyReadsTest
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/transaction_test" "--gtest_filter=TransactionTest.DirtyReadsTest" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/transaction_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"TransactionTest.DirtyReadsTest" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = TransactionTest.DirtyReadsTest
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TransactionTest
+[ RUN      ] TransactionTest.DirtyReadsTest
+
+Exception Type :: Not implemented
+Message :: InsertExecutor is not implemented
+libc++abi: terminating due to uncaught exception of type bustub::NotImplementedException: InsertExecutor is not implemented
+<end of output>
+Test time =   0.11 sec
+----------------------------------------------------------
+Test Failed.
+"TransactionTest.DirtyReadsTest" end time: Nov 30 05:14 CST
+"TransactionTest.DirtyReadsTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+83/150 Testing: HashTablePageTest.DirectoryPageSampleTest
+83/150 Test: HashTablePageTest.DirectoryPageSampleTest
+Command: ""
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"HashTablePageTest.DirectoryPageSampleTest" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"HashTablePageTest.DirectoryPageSampleTest" end time: Nov 30 05:14 CST
+"HashTablePageTest.DirectoryPageSampleTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+84/150 Testing: HashTablePageTest.BucketPageSampleTest
+84/150 Test: HashTablePageTest.BucketPageSampleTest
+Command: ""
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"HashTablePageTest.BucketPageSampleTest" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"HashTablePageTest.BucketPageSampleTest" end time: Nov 30 05:14 CST
+"HashTablePageTest.BucketPageSampleTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+85/150 Testing: HashTableTest.SampleTest
+85/150 Test: HashTableTest.SampleTest
+Command: ""
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"HashTableTest.SampleTest" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"HashTableTest.SampleTest" end time: Nov 30 05:14 CST
+"HashTableTest.SampleTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+86/150 Testing: ExtendibleHashTableTest.InsertSplit
+86/150 Test: ExtendibleHashTableTest.InsertSplit
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/extendible_hash_table_test" "--gtest_filter=ExtendibleHashTableTest.InsertSplit" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/extendible_hash_table_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"ExtendibleHashTableTest.InsertSplit" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = ExtendibleHashTableTest.InsertSplit
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ExtendibleHashTableTest
+[ RUN      ] ExtendibleHashTableTest.InsertSplit
+[       OK ] ExtendibleHashTableTest.InsertSplit (0 ms)
+[----------] 1 test from ExtendibleHashTableTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"ExtendibleHashTableTest.InsertSplit" end time: Nov 30 05:14 CST
+"ExtendibleHashTableTest.InsertSplit" time elapsed: 00:00:00
+----------------------------------------------------------
+
+87/150 Testing: ExtendibleHashTableTest.InsertMultipleSplit
+87/150 Test: ExtendibleHashTableTest.InsertMultipleSplit
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/extendible_hash_table_test" "--gtest_filter=ExtendibleHashTableTest.InsertMultipleSplit" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/extendible_hash_table_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"ExtendibleHashTableTest.InsertMultipleSplit" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = ExtendibleHashTableTest.InsertMultipleSplit
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ExtendibleHashTableTest
+[ RUN      ] ExtendibleHashTableTest.InsertMultipleSplit
+[       OK ] ExtendibleHashTableTest.InsertMultipleSplit (0 ms)
+[----------] 1 test from ExtendibleHashTableTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"ExtendibleHashTableTest.InsertMultipleSplit" end time: Nov 30 05:14 CST
+"ExtendibleHashTableTest.InsertMultipleSplit" time elapsed: 00:00:00
+----------------------------------------------------------
+
+88/150 Testing: ExtendibleHashTableTest.ConcurrentInsertFind
+88/150 Test: ExtendibleHashTableTest.ConcurrentInsertFind
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/extendible_hash_table_test" "--gtest_filter=ExtendibleHashTableTest.ConcurrentInsertFind" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/extendible_hash_table_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"ExtendibleHashTableTest.ConcurrentInsertFind" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = ExtendibleHashTableTest.ConcurrentInsertFind
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ExtendibleHashTableTest
+[ RUN      ] ExtendibleHashTableTest.ConcurrentInsertFind
+[       OK ] ExtendibleHashTableTest.ConcurrentInsertFind (26 ms)
+[----------] 1 test from ExtendibleHashTableTest (26 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (26 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.07 sec
+----------------------------------------------------------
+Test Passed.
+"ExtendibleHashTableTest.ConcurrentInsertFind" end time: Nov 30 05:14 CST
+"ExtendibleHashTableTest.ConcurrentInsertFind" time elapsed: 00:00:00
+----------------------------------------------------------
+
+89/150 Testing: ExtendibleHashTableTest.ConcurrentRemoveInsert
+89/150 Test: ExtendibleHashTableTest.ConcurrentRemoveInsert
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/extendible_hash_table_test" "--gtest_filter=ExtendibleHashTableTest.ConcurrentRemoveInsert" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/extendible_hash_table_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"ExtendibleHashTableTest.ConcurrentRemoveInsert" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = ExtendibleHashTableTest.ConcurrentRemoveInsert
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ExtendibleHashTableTest
+[ RUN      ] ExtendibleHashTableTest.ConcurrentRemoveInsert
+[       OK ] ExtendibleHashTableTest.ConcurrentRemoveInsert (51 ms)
+[----------] 1 test from ExtendibleHashTableTest (51 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (51 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.10 sec
+----------------------------------------------------------
+Test Passed.
+"ExtendibleHashTableTest.ConcurrentRemoveInsert" end time: Nov 30 05:14 CST
+"ExtendibleHashTableTest.ConcurrentRemoveInsert" time elapsed: 00:00:00
+----------------------------------------------------------
+
+90/150 Testing: ExtendibleHashTableTest.InitiallyEmpty
+90/150 Test: ExtendibleHashTableTest.InitiallyEmpty
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/extendible_hash_table_test" "--gtest_filter=ExtendibleHashTableTest.InitiallyEmpty" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/extendible_hash_table_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"ExtendibleHashTableTest.InitiallyEmpty" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = ExtendibleHashTableTest.InitiallyEmpty
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ExtendibleHashTableTest
+[ RUN      ] ExtendibleHashTableTest.InitiallyEmpty
+[       OK ] ExtendibleHashTableTest.InitiallyEmpty (0 ms)
+[----------] 1 test from ExtendibleHashTableTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"ExtendibleHashTableTest.InitiallyEmpty" end time: Nov 30 05:14 CST
+"ExtendibleHashTableTest.InitiallyEmpty" time elapsed: 00:00:00
+----------------------------------------------------------
+
+91/150 Testing: ExtendibleHashTableTest.InsertAndFind
+91/150 Test: ExtendibleHashTableTest.InsertAndFind
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/extendible_hash_table_test" "--gtest_filter=ExtendibleHashTableTest.InsertAndFind" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/extendible_hash_table_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"ExtendibleHashTableTest.InsertAndFind" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = ExtendibleHashTableTest.InsertAndFind
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ExtendibleHashTableTest
+[ RUN      ] ExtendibleHashTableTest.InsertAndFind
+[       OK ] ExtendibleHashTableTest.InsertAndFind (0 ms)
+[----------] 1 test from ExtendibleHashTableTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"ExtendibleHashTableTest.InsertAndFind" end time: Nov 30 05:14 CST
+"ExtendibleHashTableTest.InsertAndFind" time elapsed: 00:00:00
+----------------------------------------------------------
+
+92/150 Testing: ExtendibleHashTableTest.GlobalDepth
+92/150 Test: ExtendibleHashTableTest.GlobalDepth
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/extendible_hash_table_test" "--gtest_filter=ExtendibleHashTableTest.GlobalDepth" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/extendible_hash_table_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"ExtendibleHashTableTest.GlobalDepth" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = ExtendibleHashTableTest.GlobalDepth
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ExtendibleHashTableTest
+[ RUN      ] ExtendibleHashTableTest.GlobalDepth
+[       OK ] ExtendibleHashTableTest.GlobalDepth (0 ms)
+[----------] 1 test from ExtendibleHashTableTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"ExtendibleHashTableTest.GlobalDepth" end time: Nov 30 05:14 CST
+"ExtendibleHashTableTest.GlobalDepth" time elapsed: 00:00:00
+----------------------------------------------------------
+
+93/150 Testing: ExtendibleHashTableTest.LocalDepth
+93/150 Test: ExtendibleHashTableTest.LocalDepth
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/extendible_hash_table_test" "--gtest_filter=ExtendibleHashTableTest.LocalDepth" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/extendible_hash_table_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"ExtendibleHashTableTest.LocalDepth" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = ExtendibleHashTableTest.LocalDepth
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ExtendibleHashTableTest
+[ RUN      ] ExtendibleHashTableTest.LocalDepth
+[       OK ] ExtendibleHashTableTest.LocalDepth (0 ms)
+[----------] 1 test from ExtendibleHashTableTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"ExtendibleHashTableTest.LocalDepth" end time: Nov 30 05:14 CST
+"ExtendibleHashTableTest.LocalDepth" time elapsed: 00:00:00
+----------------------------------------------------------
+
+94/150 Testing: ExtendibleHashTableTest.InsertAndReplace
+94/150 Test: ExtendibleHashTableTest.InsertAndReplace
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/extendible_hash_table_test" "--gtest_filter=ExtendibleHashTableTest.InsertAndReplace" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/extendible_hash_table_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"ExtendibleHashTableTest.InsertAndReplace" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = ExtendibleHashTableTest.InsertAndReplace
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ExtendibleHashTableTest
+[ RUN      ] ExtendibleHashTableTest.InsertAndReplace
+[       OK ] ExtendibleHashTableTest.InsertAndReplace (0 ms)
+[----------] 1 test from ExtendibleHashTableTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.07 sec
+----------------------------------------------------------
+Test Passed.
+"ExtendibleHashTableTest.InsertAndReplace" end time: Nov 30 05:14 CST
+"ExtendibleHashTableTest.InsertAndReplace" time elapsed: 00:00:00
+----------------------------------------------------------
+
+95/150 Testing: ExtendibleHashTableTest.Remove
+95/150 Test: ExtendibleHashTableTest.Remove
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/extendible_hash_table_test" "--gtest_filter=ExtendibleHashTableTest.Remove" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/extendible_hash_table_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"ExtendibleHashTableTest.Remove" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = ExtendibleHashTableTest.Remove
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ExtendibleHashTableTest
+[ RUN      ] ExtendibleHashTableTest.Remove
+[       OK ] ExtendibleHashTableTest.Remove (0 ms)
+[----------] 1 test from ExtendibleHashTableTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"ExtendibleHashTableTest.Remove" end time: Nov 30 05:14 CST
+"ExtendibleHashTableTest.Remove" time elapsed: 00:00:00
+----------------------------------------------------------
+
+96/150 Testing: ExtendibleHashTableTest.GetNumBuckets
+96/150 Test: ExtendibleHashTableTest.GetNumBuckets
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/extendible_hash_table_test" "--gtest_filter=ExtendibleHashTableTest.GetNumBuckets" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/extendible_hash_table_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"ExtendibleHashTableTest.GetNumBuckets" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = ExtendibleHashTableTest.GetNumBuckets
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ExtendibleHashTableTest
+[ RUN      ] ExtendibleHashTableTest.GetNumBuckets
+[       OK ] ExtendibleHashTableTest.GetNumBuckets (0 ms)
+[----------] 1 test from ExtendibleHashTableTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"ExtendibleHashTableTest.GetNumBuckets" end time: Nov 30 05:14 CST
+"ExtendibleHashTableTest.GetNumBuckets" time elapsed: 00:00:00
+----------------------------------------------------------
+
+97/150 Testing: ExtendibleHashTableTest.IntegratedTest
+97/150 Test: ExtendibleHashTableTest.IntegratedTest
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/extendible_hash_table_test" "--gtest_filter=ExtendibleHashTableTest.IntegratedTest" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/extendible_hash_table_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"ExtendibleHashTableTest.IntegratedTest" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = ExtendibleHashTableTest.IntegratedTest
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ExtendibleHashTableTest
+[ RUN      ] ExtendibleHashTableTest.IntegratedTest
+[       OK ] ExtendibleHashTableTest.IntegratedTest (10 ms)
+[----------] 1 test from ExtendibleHashTableTest (10 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (10 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"ExtendibleHashTableTest.IntegratedTest" end time: Nov 30 05:14 CST
+"ExtendibleHashTableTest.IntegratedTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+98/150 Testing: StarterTrieNodeTest.TrieNodeConstructorTest
+98/150 Test: StarterTrieNodeTest.TrieNodeConstructorTest
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/starter_trie_test" "--gtest_filter=StarterTrieNodeTest.TrieNodeConstructorTest" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/starter_trie_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"StarterTrieNodeTest.TrieNodeConstructorTest" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = StarterTrieNodeTest.TrieNodeConstructorTest
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from StarterTrieNodeTest
+[ RUN      ] StarterTrieNodeTest.TrieNodeConstructorTest
+[       OK ] StarterTrieNodeTest.TrieNodeConstructorTest (0 ms)
+[----------] 1 test from StarterTrieNodeTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"StarterTrieNodeTest.TrieNodeConstructorTest" end time: Nov 30 05:14 CST
+"StarterTrieNodeTest.TrieNodeConstructorTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+99/150 Testing: StarterTrieNodeTest.TrieNodeInsertRemoveTest
+99/150 Test: StarterTrieNodeTest.TrieNodeInsertRemoveTest
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/starter_trie_test" "--gtest_filter=StarterTrieNodeTest.TrieNodeInsertRemoveTest" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/starter_trie_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"StarterTrieNodeTest.TrieNodeInsertRemoveTest" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = StarterTrieNodeTest.TrieNodeInsertRemoveTest
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from StarterTrieNodeTest
+[ RUN      ] StarterTrieNodeTest.TrieNodeInsertRemoveTest
+[       OK ] StarterTrieNodeTest.TrieNodeInsertRemoveTest (0 ms)
+[----------] 1 test from StarterTrieNodeTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"StarterTrieNodeTest.TrieNodeInsertRemoveTest" end time: Nov 30 05:14 CST
+"StarterTrieNodeTest.TrieNodeInsertRemoveTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+100/150 Testing: StarterTrieNodeTest.TrieNodeChildTest
+100/150 Test: StarterTrieNodeTest.TrieNodeChildTest
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/starter_trie_test" "--gtest_filter=StarterTrieNodeTest.TrieNodeChildTest" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/starter_trie_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"StarterTrieNodeTest.TrieNodeChildTest" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = StarterTrieNodeTest.TrieNodeChildTest
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from StarterTrieNodeTest
+[ RUN      ] StarterTrieNodeTest.TrieNodeChildTest
+[       OK ] StarterTrieNodeTest.TrieNodeChildTest (0 ms)
+[----------] 1 test from StarterTrieNodeTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"StarterTrieNodeTest.TrieNodeChildTest" end time: Nov 30 05:14 CST
+"StarterTrieNodeTest.TrieNodeChildTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+101/150 Testing: StarterTrieNodeWithValueTest.TrieNodeWithValueTest
+101/150 Test: StarterTrieNodeWithValueTest.TrieNodeWithValueTest
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/starter_trie_test" "--gtest_filter=StarterTrieNodeWithValueTest.TrieNodeWithValueTest" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/starter_trie_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"StarterTrieNodeWithValueTest.TrieNodeWithValueTest" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = StarterTrieNodeWithValueTest.TrieNodeWithValueTest
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from StarterTrieNodeWithValueTest
+[ RUN      ] StarterTrieNodeWithValueTest.TrieNodeWithValueTest
+[       OK ] StarterTrieNodeWithValueTest.TrieNodeWithValueTest (0 ms)
+[----------] 1 test from StarterTrieNodeWithValueTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"StarterTrieNodeWithValueTest.TrieNodeWithValueTest" end time: Nov 30 05:14 CST
+"StarterTrieNodeWithValueTest.TrieNodeWithValueTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+102/150 Testing: StarterTrieTest.InsertTest
+102/150 Test: StarterTrieTest.InsertTest
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/starter_trie_test" "--gtest_filter=StarterTrieTest.InsertTest" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/starter_trie_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"StarterTrieTest.InsertTest" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = StarterTrieTest.InsertTest
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from StarterTrieTest
+[ RUN      ] StarterTrieTest.InsertTest
+[       OK ] StarterTrieTest.InsertTest (20 ms)
+[----------] 1 test from StarterTrieTest (20 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (20 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"StarterTrieTest.InsertTest" end time: Nov 30 05:14 CST
+"StarterTrieTest.InsertTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+103/150 Testing: StarterTrieTest.RemoveTest
+103/150 Test: StarterTrieTest.RemoveTest
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/starter_trie_test" "--gtest_filter=StarterTrieTest.RemoveTest" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/starter_trie_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"StarterTrieTest.RemoveTest" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = StarterTrieTest.RemoveTest
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from StarterTrieTest
+[ RUN      ] StarterTrieTest.RemoveTest
+[       OK ] StarterTrieTest.RemoveTest (22 ms)
+[----------] 1 test from StarterTrieTest (22 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (22 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.07 sec
+----------------------------------------------------------
+Test Passed.
+"StarterTrieTest.RemoveTest" end time: Nov 30 05:14 CST
+"StarterTrieTest.RemoveTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+104/150 Testing: StarterTrieTest.RandomElementsInsertRemoveTest
+104/150 Test: StarterTrieTest.RandomElementsInsertRemoveTest
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/starter_trie_test" "--gtest_filter=StarterTrieTest.RandomElementsInsertRemoveTest" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/starter_trie_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"StarterTrieTest.RandomElementsInsertRemoveTest" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = StarterTrieTest.RandomElementsInsertRemoveTest
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from StarterTrieTest
+[ RUN      ] StarterTrieTest.RandomElementsInsertRemoveTest
+[       OK ] StarterTrieTest.RandomElementsInsertRemoveTest (66 ms)
+[----------] 1 test from StarterTrieTest (66 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (66 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.12 sec
+----------------------------------------------------------
+Test Passed.
+"StarterTrieTest.RandomElementsInsertRemoveTest" end time: Nov 30 05:14 CST
+"StarterTrieTest.RandomElementsInsertRemoveTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+105/150 Testing: StarterTrieTest.ConcurrentTest1
+105/150 Test: StarterTrieTest.ConcurrentTest1
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/starter_trie_test" "--gtest_filter=StarterTrieTest.ConcurrentTest1" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/starter_trie_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"StarterTrieTest.ConcurrentTest1" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = StarterTrieTest.ConcurrentTest1
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from StarterTrieTest
+[ RUN      ] StarterTrieTest.ConcurrentTest1
+[       OK ] StarterTrieTest.ConcurrentTest1 (528 ms)
+[----------] 1 test from StarterTrieTest (529 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (529 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.58 sec
+----------------------------------------------------------
+Test Passed.
+"StarterTrieTest.ConcurrentTest1" end time: Nov 30 05:14 CST
+"StarterTrieTest.ConcurrentTest1" time elapsed: 00:00:00
+----------------------------------------------------------
+
+106/150 Testing: StarterTrieTest.ConcurrentTest2
+106/150 Test: StarterTrieTest.ConcurrentTest2
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/starter_trie_test" "--gtest_filter=StarterTrieTest.ConcurrentTest2" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/starter_trie_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"StarterTrieTest.ConcurrentTest2" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = StarterTrieTest.ConcurrentTest2
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from StarterTrieTest
+[ RUN      ] StarterTrieTest.ConcurrentTest2
+[       OK ] StarterTrieTest.ConcurrentTest2 (430 ms)
+[----------] 1 test from StarterTrieTest (430 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (430 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.47 sec
+----------------------------------------------------------
+Test Passed.
+"StarterTrieTest.ConcurrentTest2" end time: Nov 30 05:14 CST
+"StarterTrieTest.ConcurrentTest2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+107/150 Testing: RecoveryTest.RedoTest
+107/150 Test: RecoveryTest.RedoTest
+Command: ""
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"RecoveryTest.RedoTest" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"RecoveryTest.RedoTest" end time: Nov 30 05:14 CST
+"RecoveryTest.RedoTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+108/150 Testing: RecoveryTest.UndoTest
+108/150 Test: RecoveryTest.UndoTest
+Command: ""
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"RecoveryTest.UndoTest" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"RecoveryTest.UndoTest" end time: Nov 30 05:14 CST
+"RecoveryTest.UndoTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+109/150 Testing: RecoveryTest.CheckpointTest
+109/150 Test: RecoveryTest.CheckpointTest
+Command: ""
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"RecoveryTest.CheckpointTest" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"RecoveryTest.CheckpointTest" end time: Nov 30 05:14 CST
+"RecoveryTest.CheckpointTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+110/150 Testing: BPlusTreeConcurrentTest.InsertTest1
+110/150 Test: BPlusTreeConcurrentTest.InsertTest1
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/b_plus_tree_concurrent_test" "--gtest_filter=BPlusTreeConcurrentTest.InsertTest1" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/b_plus_tree_concurrent_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"BPlusTreeConcurrentTest.InsertTest1" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = BPlusTreeConcurrentTest.InsertTest1
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BPlusTreeConcurrentTest
+[ RUN      ] BPlusTreeConcurrentTest.InsertTest1
+[       OK ] BPlusTreeConcurrentTest.InsertTest1 (213 ms)
+[----------] 1 test from BPlusTreeConcurrentTest (213 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (213 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.27 sec
+----------------------------------------------------------
+Test Passed.
+"BPlusTreeConcurrentTest.InsertTest1" end time: Nov 30 05:14 CST
+"BPlusTreeConcurrentTest.InsertTest1" time elapsed: 00:00:00
+----------------------------------------------------------
+
+111/150 Testing: BPlusTreeConcurrentTest.InsertTest2
+111/150 Test: BPlusTreeConcurrentTest.InsertTest2
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/b_plus_tree_concurrent_test" "--gtest_filter=BPlusTreeConcurrentTest.InsertTest2" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/b_plus_tree_concurrent_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"BPlusTreeConcurrentTest.InsertTest2" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = BPlusTreeConcurrentTest.InsertTest2
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BPlusTreeConcurrentTest
+[ RUN      ] BPlusTreeConcurrentTest.InsertTest2
+[       OK ] BPlusTreeConcurrentTest.InsertTest2 (33 ms)
+[----------] 1 test from BPlusTreeConcurrentTest (33 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (33 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.09 sec
+----------------------------------------------------------
+Test Passed.
+"BPlusTreeConcurrentTest.InsertTest2" end time: Nov 30 05:14 CST
+"BPlusTreeConcurrentTest.InsertTest2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+112/150 Testing: BPlusTreeConcurrentTest.DeleteTest1
+112/150 Test: BPlusTreeConcurrentTest.DeleteTest1
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/b_plus_tree_concurrent_test" "--gtest_filter=BPlusTreeConcurrentTest.DeleteTest1" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/b_plus_tree_concurrent_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"BPlusTreeConcurrentTest.DeleteTest1" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = BPlusTreeConcurrentTest.DeleteTest1
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BPlusTreeConcurrentTest
+[ RUN      ] BPlusTreeConcurrentTest.DeleteTest1
+[       OK ] BPlusTreeConcurrentTest.DeleteTest1 (1 ms)
+[----------] 1 test from BPlusTreeConcurrentTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"BPlusTreeConcurrentTest.DeleteTest1" end time: Nov 30 05:14 CST
+"BPlusTreeConcurrentTest.DeleteTest1" time elapsed: 00:00:00
+----------------------------------------------------------
+
+113/150 Testing: BPlusTreeConcurrentTest.DeleteTest2
+113/150 Test: BPlusTreeConcurrentTest.DeleteTest2
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/b_plus_tree_concurrent_test" "--gtest_filter=BPlusTreeConcurrentTest.DeleteTest2" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/b_plus_tree_concurrent_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"BPlusTreeConcurrentTest.DeleteTest2" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = BPlusTreeConcurrentTest.DeleteTest2
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BPlusTreeConcurrentTest
+[ RUN      ] BPlusTreeConcurrentTest.DeleteTest2
+[       OK ] BPlusTreeConcurrentTest.DeleteTest2 (1 ms)
+[----------] 1 test from BPlusTreeConcurrentTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"BPlusTreeConcurrentTest.DeleteTest2" end time: Nov 30 05:14 CST
+"BPlusTreeConcurrentTest.DeleteTest2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+114/150 Testing: BPlusTreeConcurrentTest.MixTest
+114/150 Test: BPlusTreeConcurrentTest.MixTest
+Command: "/Users/cscs/Downloads/bustub_initial/build/test/b_plus_tree_concurrent_test" "--gtest_filter=BPlusTreeConcurrentTest.MixTest" "--gtest_also_run_disabled_tests" "--gtest_color=auto" "--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/b_plus_tree_concurrent_test.xml" "--gtest_catch_exceptions=0"
+Directory: /Users/cscs/Downloads/bustub_initial/build/test
+"BPlusTreeConcurrentTest.MixTest" start time: Nov 30 05:14 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+Note: Google Test filter = BPlusTreeConcurrentTest.MixTest
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BPlusTreeConcurrentTest
+[ RUN      ] BPlusTreeConcurrentTest.MixTest
+[       OK ] BPlusTreeConcurrentTest.MixTest (1 ms)
+[----------] 1 test from BPlusTreeConcurrentTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"BPlusTreeConcurrentTest.MixTest" end time: Nov 30 05:14 CST
+"BPlusTreeConcurrentTest.MixTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
