@@ -1,0 +1,3 @@
+add_test([=[ClockReplacerTest.SampleTest]=]  /Users/cscs/Downloads/bustub_initial/build/test/clock_replacer_test [==[--gtest_filter=ClockReplacerTest.DISABLED_SampleTest]==] --gtest_also_run_disabled_tests [==[--gtest_color=auto]==] [==[--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/clock_replacer_test.xml]==] [==[--gtest_catch_exceptions=0]==])
+set_tests_properties([=[ClockReplacerTest.SampleTest]=]  PROPERTIES DISABLED TRUE WORKING_DIRECTORY /Users/cscs/Downloads/bustub_initial/build/test SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==] TIMEOUT 120)
+set(  clock_replacer_test_TESTS ClockReplacerTest.SampleTest)

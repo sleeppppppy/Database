@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="0" disabled="0" errors="0" time="0.43" timestamp="2025-11-30T05:14:12.432" name="AllTests">
+  <testsuite name="StarterTrieTest" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="0.43" timestamp="2025-11-30T05:14:12.432">
+    <testcase name="ConcurrentTest2" file="/Users/cscs/Downloads/bustub_initial/test/primer/starter_trie_test.cpp" line="513" status="run" result="completed" time="0.43" timestamp="2025-11-30T05:14:12.432" classname="StarterTrieTest" />
+  </testsuite>
+</testsuites>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="1" disabled="0" errors="0" time="0.108" timestamp="2025-11-30T05:14:10.079" name="AllTests">
+  <testsuite name="LockManagerTest" tests="1" failures="1" disabled="0" skipped="0" errors="0" time="0.108" timestamp="2025-11-30T05:14:10.079">
+    <testcase name="CompatibilityTest3" file="/Users/cscs/Downloads/bustub_initial/test/concurrency/lock_manager_compability_test.cpp" line="166" status="run" result="completed" time="0.108" timestamp="2025-11-30T05:14:10.079" classname="LockManagerTest">
+      <failure message="/Users/cscs/Downloads/bustub_initial/test/concurrency/lock_manager_compability_test.cpp:62&#x0A;Expected equality of these values:&#x0A;  six_size&#x0A;    Which is: 1&#x0A;  txn-&gt;GetSharedIntentionExclusiveTableLockSet()-&gt;size()&#x0A;    Which is: 0" type=""><![CDATA[/Users/cscs/Downloads/bustub_initial/test/concurrency/lock_manager_compability_test.cpp:62
+Expected equality of these values:
+  six_size
+    Which is: 1
+  txn->GetSharedIntentionExclusiveTableLockSet()->size()
+    Which is: 0]]></failure>
+      <failure message="/Users/cscs/Downloads/bustub_initial/test/concurrency/lock_manager_compability_test.cpp:60&#x0A;Expected equality of these values:&#x0A;  is_size&#x0A;    Which is: 1&#x0A;  txn-&gt;GetIntentionSharedTableLockSet()-&gt;size()&#x0A;    Which is: 0" type=""><![CDATA[/Users/cscs/Downloads/bustub_initial/test/concurrency/lock_manager_compability_test.cpp:60
+Expected equality of these values:
+  is_size
+    Which is: 1
+  txn->GetIntentionSharedTableLockSet()->size()
+    Which is: 0]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

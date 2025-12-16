@@ -1,0 +1,3 @@
+add_test([=[TmpTuplePageTest.BasicTest]=]  /Users/cscs/Downloads/bustub_initial/build/test/tmp_tuple_page_test [==[--gtest_filter=TmpTuplePageTest.DISABLED_BasicTest]==] --gtest_also_run_disabled_tests [==[--gtest_color=auto]==] [==[--gtest_output=xml:/Users/cscs/Downloads/bustub_initial/build/test/tmp_tuple_page_test.xml]==] [==[--gtest_catch_exceptions=0]==])
+set_tests_properties([=[TmpTuplePageTest.BasicTest]=]  PROPERTIES DISABLED TRUE WORKING_DIRECTORY /Users/cscs/Downloads/bustub_initial/build/test SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==] TIMEOUT 120)
+set(  tmp_tuple_page_test_TESTS TmpTuplePageTest.BasicTest)
